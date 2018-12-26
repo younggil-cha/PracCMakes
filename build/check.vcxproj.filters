@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <CustomBuild Include="C:\eigen-eigen-2e4aedfc8e06\build\CMakeFiles\1783cc50d4ae3aa73fa028c1320e9ed6\check.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\eigen-eigen-2e4aedfc8e06\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="C:\eigen-eigen-2e4aedfc8e06\build\CMakeFiles\check" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="CMake Rules">
+      <UniqueIdentifier>{CD80A496-655F-3004-A62D-BB03974F971A}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

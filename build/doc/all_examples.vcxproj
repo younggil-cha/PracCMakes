@@ -1,0 +1,599 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="MinSizeRel|x64">
+      <Configuration>MinSizeRel</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RelWithDebInfo|x64">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{DF6B6EED-9823-37B8-92F2-9865549C4ECE}</ProjectGuid>
+    <WindowsTargetPlatformVersion>10.0.17763.0</WindowsTargetPlatformVersion>
+    <Keyword>Win32Proj</Keyword>
+    <Platform>x64</Platform>
+    <ProjectName>all_examples</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>C:\eigen-eigen-2e4aedfc8e06;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>C:\eigen-eigen-2e4aedfc8e06;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>C:\eigen-eigen-2e4aedfc8e06;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>C:\eigen-eigen-2e4aedfc8e06;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\eigen-eigen-2e4aedfc8e06\doc\CMakeLists.txt">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Custom Rule C:/eigen-eigen-2e4aedfc8e06/doc/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/eigen-eigen-2e4aedfc8e06 -BC:/eigen-eigen-2e4aedfc8e06/build --check-stamp-file C:/eigen-eigen-2e4aedfc8e06/build/doc/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:/eigen-eigen-2e4aedfc8e06/doc/CMakeLists.txt;C:\eigen-eigen-2e4aedfc8e06\doc\CMakeLists.txt;C:\eigen-eigen-2e4aedfc8e06\doc\Doxyfile.in;C:\eigen-eigen-2e4aedfc8e06\doc\eigendoxy_footer.html.in;C:\eigen-eigen-2e4aedfc8e06\doc\eigendoxy_header.html.in;C:\eigen-eigen-2e4aedfc8e06\doc\eigendoxy_layout.xml.in;C:\eigen-eigen-2e4aedfc8e06\unsupported\doc\eigendoxy_layout.xml.in;C:\eigen-eigen-2e4aedfc8e06\doc\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\eigen-eigen-2e4aedfc8e06\build\doc\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Custom Rule C:/eigen-eigen-2e4aedfc8e06/doc/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/eigen-eigen-2e4aedfc8e06 -BC:/eigen-eigen-2e4aedfc8e06/build --check-stamp-file C:/eigen-eigen-2e4aedfc8e06/build/doc/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:/eigen-eigen-2e4aedfc8e06/doc/CMakeLists.txt;C:\eigen-eigen-2e4aedfc8e06\doc\CMakeLists.txt;C:\eigen-eigen-2e4aedfc8e06\doc\Doxyfile.in;C:\eigen-eigen-2e4aedfc8e06\doc\eigendoxy_footer.html.in;C:\eigen-eigen-2e4aedfc8e06\doc\eigendoxy_header.html.in;C:\eigen-eigen-2e4aedfc8e06\doc\eigendoxy_layout.xml.in;C:\eigen-eigen-2e4aedfc8e06\unsupported\doc\eigendoxy_layout.xml.in;C:\eigen-eigen-2e4aedfc8e06\doc\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\eigen-eigen-2e4aedfc8e06\build\doc\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Building Custom Rule C:/eigen-eigen-2e4aedfc8e06/doc/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/eigen-eigen-2e4aedfc8e06 -BC:/eigen-eigen-2e4aedfc8e06/build --check-stamp-file C:/eigen-eigen-2e4aedfc8e06/build/doc/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:/eigen-eigen-2e4aedfc8e06/doc/CMakeLists.txt;C:\eigen-eigen-2e4aedfc8e06\doc\CMakeLists.txt;C:\eigen-eigen-2e4aedfc8e06\doc\Doxyfile.in;C:\eigen-eigen-2e4aedfc8e06\doc\eigendoxy_footer.html.in;C:\eigen-eigen-2e4aedfc8e06\doc\eigendoxy_header.html.in;C:\eigen-eigen-2e4aedfc8e06\doc\eigendoxy_layout.xml.in;C:\eigen-eigen-2e4aedfc8e06\unsupported\doc\eigendoxy_layout.xml.in;C:\eigen-eigen-2e4aedfc8e06\doc\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\eigen-eigen-2e4aedfc8e06\build\doc\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Building Custom Rule C:/eigen-eigen-2e4aedfc8e06/doc/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/eigen-eigen-2e4aedfc8e06 -BC:/eigen-eigen-2e4aedfc8e06/build --check-stamp-file C:/eigen-eigen-2e4aedfc8e06/build/doc/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:/eigen-eigen-2e4aedfc8e06/doc/CMakeLists.txt;C:\eigen-eigen-2e4aedfc8e06\doc\CMakeLists.txt;C:\eigen-eigen-2e4aedfc8e06\doc\Doxyfile.in;C:\eigen-eigen-2e4aedfc8e06\doc\eigendoxy_footer.html.in;C:\eigen-eigen-2e4aedfc8e06\doc\eigendoxy_header.html.in;C:\eigen-eigen-2e4aedfc8e06\doc\eigendoxy_layout.xml.in;C:\eigen-eigen-2e4aedfc8e06\unsupported\doc\eigendoxy_layout.xml.in;C:\eigen-eigen-2e4aedfc8e06\doc\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\eigen-eigen-2e4aedfc8e06\build\doc\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="C:\eigen-eigen-2e4aedfc8e06\build\ZERO_CHECK.vcxproj">
+      <Project>{67A8B868-A8FA-31A8-9E35-0091F981D3DA}</Project>
+      <Name>ZERO_CHECK</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\eigen-eigen-2e4aedfc8e06\build\doc\examples\CustomizingEigen_Inheritance.vcxproj">
+      <Project>{041FAD03-E891-3896-BA66-4899C3FB7400}</Project>
+      <Name>CustomizingEigen_Inheritance</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\eigen-eigen-2e4aedfc8e06\build\doc\examples\Cwise_erf.vcxproj">
+      <Project>{E8A34414-8504-395E-91DA-85516B4008AC}</Project>
+      <Name>Cwise_erf</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\eigen-eigen-2e4aedfc8e06\build\doc\examples\Cwise_erfc.vcxproj">
+      <Project>{CA84DCED-E4F6-3391-9357-E3460BDEFAB9}</Project>
+      <Name>Cwise_erfc</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\eigen-eigen-2e4aedfc8e06\build\doc\examples\Cwise_lgamma.vcxproj">
+      <Project>{96EDC7D0-6740-3DC0-A7E3-437673B5FCCD}</Project>
+      <Name>Cwise_lgamma</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\eigen-eigen-2e4aedfc8e06\build\doc\examples\DenseBase_middleCols_int.vcxproj">
+      <Project>{FD042E71-0076-3249-A2B7-638655ACFEA1}</Project>
+      <Name>DenseBase_middleCols_int</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\eigen-eigen-2e4aedfc8e06\build\doc\examples\DenseBase_middleRows_int.vcxproj">
+      <Project>{0D1F565F-3FB8-3158-808E-6921F3D03007}</Project>
+      <Name>DenseBase_middleRows_int</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\eigen-eigen-2e4aedfc8e06\build\doc\examples\DenseBase_template_int_middleCols.vcxproj">
+      <Project>{DD184E16-A459-3CA1-914D-28C70770A6AF}</Project>
+      <Name>DenseBase_template_int_middleCols</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\eigen-eigen-2e4aedfc8e06\build\doc\examples\DenseBase_template_int_middleRows.vcxproj">
+      <Project>{1E9F5682-76EA-3C0E-B88E-DE0F0EB2E739}</Project>
+      <Name>DenseBase_template_int_middleRows</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\eigen-eigen-2e4aedfc8e06\build\doc\examples\QuickStart_example.vcxproj">
+      <Project>{4E8B2118-76F1-30E8-B659-7F2F2626F79C}</Project>
+      <Name>QuickStart_example</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\eigen-eigen-2e4aedfc8e06\build\doc\examples\QuickStart_example2_dynamic.vcxproj">
+      <Project>{E9B83FC1-7A2D-31E1-8B9C-E0D9D7BEED36}</Project>
+      <Name>QuickStart_example2_dynamic</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\eigen-eigen-2e4aedfc8e06\build\doc\examples\QuickStart_example2_fixed.vcxproj">
+      <Project>{1F4B44B7-116F-3B60-8591-B49C9A3B4360}</Project>
+      <Name>QuickStart_example2_fixed</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\eigen-eigen-2e4aedfc8e06\build\doc\examples\TemplateKeyword_flexible.vcxproj">
+      <Project>{043EB3EF-2049-3528-A29F-675FE517D5C7}</Project>
+      <Name>TemplateKeyword_flexible</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\eigen-eigen-2e4aedfc8e06\build\doc\examples\TemplateKeyword_simple.vcxproj">
+      <Project>{57DC1FB5-6303-3E84-BAF6-F7A3E2B8AB17}</Project>
+      <Name>TemplateKeyword_simple</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\eigen-eigen-2e4aedfc8e06\build\doc\examples\TutorialInplaceLU.vcxproj">
+      <Project>{AE0261C5-A61B-37B0-A5EB-89BFF48B255C}</Project>
+      <Name>TutorialInplaceLU</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\eigen-eigen-2e4aedfc8e06\build\doc\examples\TutorialLinAlgComputeTwice.vcxproj">
+      <Project>{144A0054-DD0A-35B9-8D46-AB2F75B20975}</Project>
+      <Name>TutorialLinAlgComputeTwice</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\eigen-eigen-2e4aedfc8e06\build\doc\examples\TutorialLinAlgExComputeSolveError.vcxproj">
+      <Project>{65F6E543-D142-3D73-9147-B9BE9307DDFD}</Project>
+      <Name>TutorialLinAlgExComputeSolveError</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\eigen-eigen-2e4aedfc8e06\build\doc\examples\TutorialLinAlgExSolveColPivHouseholderQR.vcxproj">
+      <Project>{5AB95110-5716-3313-A68E-CB5FE7B68140}</Project>
+      <Name>TutorialLinAlgExSolveColPivHouseholderQR</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\eigen-eigen-2e4aedfc8e06\build\doc\examples\TutorialLinAlgExSolveLDLT.vcxproj">
+      <Project>{5BD3EEE2-8677-3F2E-86F6-225AD9A847E5}</Project>
+      <Name>TutorialLinAlgExSolveLDLT</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\eigen-eigen-2e4aedfc8e06\build\doc\examples\TutorialLinAlgInverseDeterminant.vcxproj">
+      <Project>{7617E6D5-9CB8-3C3C-9004-2CE7B1C9ED33}</Project>
+      <Name>TutorialLinAlgInverseDeterminant</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\eigen-eigen-2e4aedfc8e06\build\doc\examples\TutorialLinAlgRankRevealing.vcxproj">
+      <Project>{99176CF9-7B2C-3B4A-9E8C-4AB61ACBCD56}</Project>
+      <Name>TutorialLinAlgRankRevealing</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\eigen-eigen-2e4aedfc8e06\build\doc\examples\TutorialLinAlgSVDSolve.vcxproj">
+      <Project>{74224932-5127-3451-96D2-7FB9FC98D1AC}</Project>
+      <Name>TutorialLinAlgSVDSolve</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\eigen-eigen-2e4aedfc8e06\build\doc\examples\TutorialLinAlgSelfAdjointEigenSolver.vcxproj">
+      <Project>{FADF4026-5A3B-30D2-BC21-AED8E914E948}</Project>
+      <Name>TutorialLinAlgSelfAdjointEigenSolver</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\eigen-eigen-2e4aedfc8e06\build\doc\examples\TutorialLinAlgSetThreshold.vcxproj">
+      <Project>{33394187-EF07-3E8A-AE45-40E921331BC9}</Project>
+      <Name>TutorialLinAlgSetThreshold</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\eigen-eigen-2e4aedfc8e06\build\doc\examples\Tutorial_ArrayClass_accessors.vcxproj">
+      <Project>{C41A1899-9359-3A08-8757-C477E30C86F1}</Project>
+      <Name>Tutorial_ArrayClass_accessors</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\eigen-eigen-2e4aedfc8e06\build\doc\examples\Tutorial_ArrayClass_addition.vcxproj">
+      <Project>{57431720-5E47-3DFC-AA81-23382A7EAA34}</Project>
+      <Name>Tutorial_ArrayClass_addition</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\eigen-eigen-2e4aedfc8e06\build\doc\examples\Tutorial_ArrayClass_cwise_other.vcxproj">
+      <Project>{DA42F37C-0303-31CA-9847-70BB5D0AA125}</Project>
+      <Name>Tutorial_ArrayClass_cwise_other</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\eigen-eigen-2e4aedfc8e06\build\doc\examples\Tutorial_ArrayClass_interop.vcxproj">
+      <Project>{9CA5CB56-75A2-36D3-BAAE-098969608FC6}</Project>
+      <Name>Tutorial_ArrayClass_interop</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\eigen-eigen-2e4aedfc8e06\build\doc\examples\Tutorial_ArrayClass_interop_matrix.vcxproj">
+      <Project>{FDDD36F0-BC90-3961-9EAA-DF1DCBB5090B}</Project>
+      <Name>Tutorial_ArrayClass_interop_matrix</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\eigen-eigen-2e4aedfc8e06\build\doc\examples\Tutorial_ArrayClass_mult.vcxproj">
+      <Project>{CB8FD260-DFC0-3B10-BB67-4AD7C159297F}</Project>
+      <Name>Tutorial_ArrayClass_mult</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\eigen-eigen-2e4aedfc8e06\build\doc\examples\Tutorial_BlockOperations_block_assignment.vcxproj">
+      <Project>{62D8C766-F2C6-37D8-8AA8-93DEDEF49D92}</Project>
+      <Name>Tutorial_BlockOperations_block_assignment</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\eigen-eigen-2e4aedfc8e06\build\doc\examples\Tutorial_BlockOperations_colrow.vcxproj">
+      <Project>{0824E6B4-76F1-302D-AC7F-0711EF3A1CF0}</Project>
+      <Name>Tutorial_BlockOperations_colrow</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\eigen-eigen-2e4aedfc8e06\build\doc\examples\Tutorial_BlockOperations_corner.vcxproj">
+      <Project>{0CD6288C-1523-3D76-8E1E-EFDB4BC98371}</Project>
+      <Name>Tutorial_BlockOperations_corner</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\eigen-eigen-2e4aedfc8e06\build\doc\examples\Tutorial_BlockOperations_print_block.vcxproj">
+      <Project>{46E435AE-7FC6-3B12-9231-74414EE72DC8}</Project>
+      <Name>Tutorial_BlockOperations_print_block</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\eigen-eigen-2e4aedfc8e06\build\doc\examples\Tutorial_BlockOperations_vector.vcxproj">
+      <Project>{8C079D05-51EA-33B4-B8C5-868073C42712}</Project>
+      <Name>Tutorial_BlockOperations_vector</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\eigen-eigen-2e4aedfc8e06\build\doc\examples\Tutorial_PartialLU_solve.vcxproj">
+      <Project>{91DCBA73-12EF-399A-AD1C-4F502DC205BA}</Project>
+      <Name>Tutorial_PartialLU_solve</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\eigen-eigen-2e4aedfc8e06\build\doc\examples\Tutorial_ReductionsVisitorsBroadcasting_broadcast_1nn.vcxproj">
+      <Project>{C581B1E4-F571-32EE-9F54-5A37BFF25E3E}</Project>
+      <Name>Tutorial_ReductionsVisitorsBroadcasting_broadcast_1nn</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\eigen-eigen-2e4aedfc8e06\build\doc\examples\Tutorial_ReductionsVisitorsBroadcasting_broadcast_simple.vcxproj">
+      <Project>{704210B5-B739-3CFF-BB9F-EB917806C70E}</Project>
+      <Name>Tutorial_ReductionsVisitorsBroadcasting_broadcast_simple</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\eigen-eigen-2e4aedfc8e06\build\doc\examples\Tutorial_ReductionsVisitorsBroadcasting_broadcast_simple_rowwise.vcxproj">
+      <Project>{1447D811-CECC-365F-8B49-6F4E2D53BF11}</Project>
+      <Name>Tutorial_ReductionsVisitorsBroadcasting_broadcast_simple_rowwise</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\eigen-eigen-2e4aedfc8e06\build\doc\examples\Tutorial_ReductionsVisitorsBroadcasting_colwise.vcxproj">
+      <Project>{B2CC0FAA-7C9B-3EBA-8EE4-57BB854A4DC9}</Project>
+      <Name>Tutorial_ReductionsVisitorsBroadcasting_colwise</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\eigen-eigen-2e4aedfc8e06\build\doc\examples\Tutorial_ReductionsVisitorsBroadcasting_maxnorm.vcxproj">
+      <Project>{0DC72748-211E-34BF-B625-DFA6C1937D27}</Project>
+      <Name>Tutorial_ReductionsVisitorsBroadcasting_maxnorm</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\eigen-eigen-2e4aedfc8e06\build\doc\examples\Tutorial_ReductionsVisitorsBroadcasting_reductions_bool.vcxproj">
+      <Project>{0AC1D7B8-BC42-3C88-B33E-02DCC4A04198}</Project>
+      <Name>Tutorial_ReductionsVisitorsBroadcasting_reductions_bool</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\eigen-eigen-2e4aedfc8e06\build\doc\examples\Tutorial_ReductionsVisitorsBroadcasting_reductions_norm.vcxproj">
+      <Project>{7F55F543-8782-3285-AA12-D5CBC82F2B12}</Project>
+      <Name>Tutorial_ReductionsVisitorsBroadcasting_reductions_norm</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\eigen-eigen-2e4aedfc8e06\build\doc\examples\Tutorial_ReductionsVisitorsBroadcasting_reductions_operatornorm.vcxproj">
+      <Project>{622831FB-EEE5-35A6-9CD6-EC728859D105}</Project>
+      <Name>Tutorial_ReductionsVisitorsBroadcasting_reductions_operatornorm</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\eigen-eigen-2e4aedfc8e06\build\doc\examples\Tutorial_ReductionsVisitorsBroadcasting_rowwise.vcxproj">
+      <Project>{CA8F3CCE-A6F2-3B4B-A246-B9BFB047BC21}</Project>
+      <Name>Tutorial_ReductionsVisitorsBroadcasting_rowwise</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\eigen-eigen-2e4aedfc8e06\build\doc\examples\Tutorial_ReductionsVisitorsBroadcasting_visitors.vcxproj">
+      <Project>{C7FB8947-07B0-3894-8EF5-BA14277B3BD8}</Project>
+      <Name>Tutorial_ReductionsVisitorsBroadcasting_visitors</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\eigen-eigen-2e4aedfc8e06\build\doc\examples\Tutorial_simple_example_dynamic_size.vcxproj">
+      <Project>{B2C034D9-8607-3FAD-91BD-69865D6F24F4}</Project>
+      <Name>Tutorial_simple_example_dynamic_size</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\eigen-eigen-2e4aedfc8e06\build\doc\examples\Tutorial_simple_example_fixed_size.vcxproj">
+      <Project>{71736AE6-AC10-3375-908A-FD6B8D7FD85D}</Project>
+      <Name>Tutorial_simple_example_fixed_size</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\eigen-eigen-2e4aedfc8e06\build\doc\examples\class_Block.vcxproj">
+      <Project>{0562950B-BA6A-3F29-BF1E-CD6D282FCAAE}</Project>
+      <Name>class_Block</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\eigen-eigen-2e4aedfc8e06\build\doc\examples\class_CwiseBinaryOp.vcxproj">
+      <Project>{DC06D96F-7CEF-3E6C-8862-C990C6402997}</Project>
+      <Name>class_CwiseBinaryOp</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\eigen-eigen-2e4aedfc8e06\build\doc\examples\class_CwiseUnaryOp.vcxproj">
+      <Project>{D8AA2AEB-5B28-3687-8612-46FA72A8B226}</Project>
+      <Name>class_CwiseUnaryOp</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\eigen-eigen-2e4aedfc8e06\build\doc\examples\class_CwiseUnaryOp_ptrfun.vcxproj">
+      <Project>{B3EEBB79-133F-3808-A59C-E6BFA4703B7F}</Project>
+      <Name>class_CwiseUnaryOp_ptrfun</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\eigen-eigen-2e4aedfc8e06\build\doc\examples\class_FixedBlock.vcxproj">
+      <Project>{DB513156-2C65-3456-851B-CA01B4FCD506}</Project>
+      <Name>class_FixedBlock</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\eigen-eigen-2e4aedfc8e06\build\doc\examples\class_FixedReshaped.vcxproj">
+      <Project>{72FB6393-CA20-3EC8-AC89-5F1AC61FAD00}</Project>
+      <Name>class_FixedReshaped</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\eigen-eigen-2e4aedfc8e06\build\doc\examples\class_FixedVectorBlock.vcxproj">
+      <Project>{A06D683E-1B2D-3E37-8DA1-990074C11ABE}</Project>
+      <Name>class_FixedVectorBlock</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\eigen-eigen-2e4aedfc8e06\build\doc\examples\class_Reshaped.vcxproj">
+      <Project>{F3D75335-6333-3DA6-B280-FDA6111E8E84}</Project>
+      <Name>class_Reshaped</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\eigen-eigen-2e4aedfc8e06\build\doc\examples\class_VectorBlock.vcxproj">
+      <Project>{F5AC7017-6C00-30E1-9B2C-436C4BE3E9D0}</Project>
+      <Name>class_VectorBlock</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\eigen-eigen-2e4aedfc8e06\build\doc\examples\function_taking_eigenbase.vcxproj">
+      <Project>{EC8F78BF-EAD9-3422-920F-D53FF46326D5}</Project>
+      <Name>function_taking_eigenbase</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\eigen-eigen-2e4aedfc8e06\build\doc\examples\function_taking_ref.vcxproj">
+      <Project>{DE7F2643-17E9-3270-B86B-668AAAFC7B1A}</Project>
+      <Name>function_taking_ref</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\eigen-eigen-2e4aedfc8e06\build\doc\examples\make_circulant.vcxproj">
+      <Project>{2A2D7C9A-7EE7-3F29-9ED9-3E7833319835}</Project>
+      <Name>make_circulant</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\eigen-eigen-2e4aedfc8e06\build\doc\examples\make_circulant2.vcxproj">
+      <Project>{238A8C8F-72FF-36CD-935F-950AD0138011}</Project>
+      <Name>make_circulant2</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\eigen-eigen-2e4aedfc8e06\build\doc\examples\matrixfree_cg.vcxproj">
+      <Project>{96EEA631-B93A-334D-B970-DA7760F4B030}</Project>
+      <Name>matrixfree_cg</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\eigen-eigen-2e4aedfc8e06\build\doc\examples\nullary_indexing.vcxproj">
+      <Project>{913F3189-5350-30B9-A3D4-EDB5C0908074}</Project>
+      <Name>nullary_indexing</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\eigen-eigen-2e4aedfc8e06\build\doc\special_examples\random_cpp11.vcxproj">
+      <Project>{B7E973FA-E013-3794-B461-305F4A2F6292}</Project>
+      <Name>random_cpp11</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\eigen-eigen-2e4aedfc8e06\build\doc\examples\tut_arithmetic_add_sub.vcxproj">
+      <Project>{D3103124-6107-3CEA-9EFB-D9B87CD6785E}</Project>
+      <Name>tut_arithmetic_add_sub</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\eigen-eigen-2e4aedfc8e06\build\doc\examples\tut_arithmetic_dot_cross.vcxproj">
+      <Project>{79C1A888-2BA5-3DA7-B31A-BDD653A12BAC}</Project>
+      <Name>tut_arithmetic_dot_cross</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\eigen-eigen-2e4aedfc8e06\build\doc\examples\tut_arithmetic_matrix_mul.vcxproj">
+      <Project>{857F1DB4-4F07-30F5-A4C3-E053A86E6A35}</Project>
+      <Name>tut_arithmetic_matrix_mul</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\eigen-eigen-2e4aedfc8e06\build\doc\examples\tut_arithmetic_redux_basic.vcxproj">
+      <Project>{1AB06CCF-760F-37B0-B5A5-324904CE377D}</Project>
+      <Name>tut_arithmetic_redux_basic</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\eigen-eigen-2e4aedfc8e06\build\doc\examples\tut_arithmetic_scalar_mul_div.vcxproj">
+      <Project>{0992609F-0630-3969-9679-F7416AB87C28}</Project>
+      <Name>tut_arithmetic_scalar_mul_div</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\eigen-eigen-2e4aedfc8e06\build\doc\examples\tut_matrix_coefficient_accessors.vcxproj">
+      <Project>{D49EC1A0-9741-3E26-9CF8-95A5AFAA3F63}</Project>
+      <Name>tut_matrix_coefficient_accessors</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\eigen-eigen-2e4aedfc8e06\build\doc\examples\tut_matrix_resize.vcxproj">
+      <Project>{21D7440E-0E54-380C-AD15-EB5A8D4F4617}</Project>
+      <Name>tut_matrix_resize</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\eigen-eigen-2e4aedfc8e06\build\doc\examples\tut_matrix_resize_fixed_size.vcxproj">
+      <Project>{697155F0-4FCE-3FF6-B72C-0ADA22C80370}</Project>
+      <Name>tut_matrix_resize_fixed_size</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

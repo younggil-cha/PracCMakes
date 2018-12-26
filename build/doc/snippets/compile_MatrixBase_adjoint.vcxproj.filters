@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="C:\eigen-eigen-2e4aedfc8e06\build\doc\snippets\compile_MatrixBase_adjoint.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\eigen-eigen-2e4aedfc8e06\doc\snippets\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{ECB1042C-7A25-3EDA-B227-37E97BF6B253}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

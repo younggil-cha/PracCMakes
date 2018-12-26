@@ -1,0 +1,227 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="MinSizeRel|x64">
+      <Configuration>MinSizeRel</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RelWithDebInfo|x64">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{4D222B07-3940-3050-8CB2-E330AC20F009}</ProjectGuid>
+    <WindowsTargetPlatformVersion>10.0.17763.0</WindowsTargetPlatformVersion>
+    <Keyword>Win32Proj</Keyword>
+    <Platform>x64</Platform>
+    <ProjectName>matrix_exponential</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>C:\eigen-eigen-2e4aedfc8e06;C:\eigen-eigen-2e4aedfc8e06\unsupported\test\..\..\test;C:\eigen-eigen-2e4aedfc8e06\unsupported\test\..\..\unsupported;C:\eigen-eigen-2e4aedfc8e06\unsupported\test\..\..\Eigen;C:\eigen-eigen-2e4aedfc8e06\build\unsupported\test\..\..\test;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>C:\eigen-eigen-2e4aedfc8e06;C:\eigen-eigen-2e4aedfc8e06\unsupported\test\..\..\test;C:\eigen-eigen-2e4aedfc8e06\unsupported\test\..\..\unsupported;C:\eigen-eigen-2e4aedfc8e06\unsupported\test\..\..\Eigen;C:\eigen-eigen-2e4aedfc8e06\build\unsupported\test\..\..\test;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>C:\eigen-eigen-2e4aedfc8e06;C:\eigen-eigen-2e4aedfc8e06\unsupported\test\..\..\test;C:\eigen-eigen-2e4aedfc8e06\unsupported\test\..\..\unsupported;C:\eigen-eigen-2e4aedfc8e06\unsupported\test\..\..\Eigen;C:\eigen-eigen-2e4aedfc8e06\build\unsupported\test\..\..\test;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>C:\eigen-eigen-2e4aedfc8e06;C:\eigen-eigen-2e4aedfc8e06\unsupported\test\..\..\test;C:\eigen-eigen-2e4aedfc8e06\unsupported\test\..\..\unsupported;C:\eigen-eigen-2e4aedfc8e06\unsupported\test\..\..\Eigen;C:\eigen-eigen-2e4aedfc8e06\build\unsupported\test\..\..\test;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\eigen-eigen-2e4aedfc8e06\unsupported\test\CMakeLists.txt">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Custom Rule C:/eigen-eigen-2e4aedfc8e06/unsupported/test/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/eigen-eigen-2e4aedfc8e06 -BC:/eigen-eigen-2e4aedfc8e06/build --check-stamp-file C:/eigen-eigen-2e4aedfc8e06/build/unsupported/test/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:/eigen-eigen-2e4aedfc8e06/unsupported/test/CMakeLists.txt;C:\Program Files\CMake\share\cmake-3.13\Modules\CheckIncludeFile.cmake;C:\Program Files\CMake\share\cmake-3.13\Modules\CheckLibraryExists.cmake;C:\Program Files\CMake\share\cmake-3.13\Modules\CheckSymbolExists.cmake;C:\Program Files\CMake\share\cmake-3.13\Modules\FindCUDA.cmake;C:\Program Files\CMake\share\cmake-3.13\Modules\FindCUDA\select_compute_arch.cmake;C:\Program Files\CMake\share\cmake-3.13\Modules\FindGLUT.cmake;C:\Program Files\CMake\share\cmake-3.13\Modules\FindOpenGL.cmake;C:\Program Files\CMake\share\cmake-3.13\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake\share\cmake-3.13\Modules\FindPackageMessage.cmake;C:\Program Files\CMake\share\cmake-3.13\Modules\FindPkgConfig.cmake;C:\Program Files\CMake\share\cmake-3.13\Modules\FindThreads.cmake;C:\Program Files\CMake\share\cmake-3.13\Modules\SelectLibraryConfigurations.cmake;C:\eigen-eigen-2e4aedfc8e06\cmake\FindAdolc.cmake;C:\eigen-eigen-2e4aedfc8e06\cmake\FindFFTW.cmake;C:\eigen-eigen-2e4aedfc8e06\cmake\FindGLEW.cmake;C:\eigen-eigen-2e4aedfc8e06\cmake\FindGMP.cmake;C:\eigen-eigen-2e4aedfc8e06\cmake\FindGoogleHash.cmake;C:\eigen-eigen-2e4aedfc8e06\cmake\FindMPFR.cmake;C:\eigen-eigen-2e4aedfc8e06\cmake\FindXsmm.cmake;C:\eigen-eigen-2e4aedfc8e06\unsupported\test\CMakeLists.txt;C:\eigen-eigen-2e4aedfc8e06\unsupported\test\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\eigen-eigen-2e4aedfc8e06\build\unsupported\test\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Custom Rule C:/eigen-eigen-2e4aedfc8e06/unsupported/test/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/eigen-eigen-2e4aedfc8e06 -BC:/eigen-eigen-2e4aedfc8e06/build --check-stamp-file C:/eigen-eigen-2e4aedfc8e06/build/unsupported/test/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:/eigen-eigen-2e4aedfc8e06/unsupported/test/CMakeLists.txt;C:\Program Files\CMake\share\cmake-3.13\Modules\CheckIncludeFile.cmake;C:\Program Files\CMake\share\cmake-3.13\Modules\CheckLibraryExists.cmake;C:\Program Files\CMake\share\cmake-3.13\Modules\CheckSymbolExists.cmake;C:\Program Files\CMake\share\cmake-3.13\Modules\FindCUDA.cmake;C:\Program Files\CMake\share\cmake-3.13\Modules\FindCUDA\select_compute_arch.cmake;C:\Program Files\CMake\share\cmake-3.13\Modules\FindGLUT.cmake;C:\Program Files\CMake\share\cmake-3.13\Modules\FindOpenGL.cmake;C:\Program Files\CMake\share\cmake-3.13\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake\share\cmake-3.13\Modules\FindPackageMessage.cmake;C:\Program Files\CMake\share\cmake-3.13\Modules\FindPkgConfig.cmake;C:\Program Files\CMake\share\cmake-3.13\Modules\FindThreads.cmake;C:\Program Files\CMake\share\cmake-3.13\Modules\SelectLibraryConfigurations.cmake;C:\eigen-eigen-2e4aedfc8e06\cmake\FindAdolc.cmake;C:\eigen-eigen-2e4aedfc8e06\cmake\FindFFTW.cmake;C:\eigen-eigen-2e4aedfc8e06\cmake\FindGLEW.cmake;C:\eigen-eigen-2e4aedfc8e06\cmake\FindGMP.cmake;C:\eigen-eigen-2e4aedfc8e06\cmake\FindGoogleHash.cmake;C:\eigen-eigen-2e4aedfc8e06\cmake\FindMPFR.cmake;C:\eigen-eigen-2e4aedfc8e06\cmake\FindXsmm.cmake;C:\eigen-eigen-2e4aedfc8e06\unsupported\test\CMakeLists.txt;C:\eigen-eigen-2e4aedfc8e06\unsupported\test\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\eigen-eigen-2e4aedfc8e06\build\unsupported\test\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Building Custom Rule C:/eigen-eigen-2e4aedfc8e06/unsupported/test/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/eigen-eigen-2e4aedfc8e06 -BC:/eigen-eigen-2e4aedfc8e06/build --check-stamp-file C:/eigen-eigen-2e4aedfc8e06/build/unsupported/test/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:/eigen-eigen-2e4aedfc8e06/unsupported/test/CMakeLists.txt;C:\Program Files\CMake\share\cmake-3.13\Modules\CheckIncludeFile.cmake;C:\Program Files\CMake\share\cmake-3.13\Modules\CheckLibraryExists.cmake;C:\Program Files\CMake\share\cmake-3.13\Modules\CheckSymbolExists.cmake;C:\Program Files\CMake\share\cmake-3.13\Modules\FindCUDA.cmake;C:\Program Files\CMake\share\cmake-3.13\Modules\FindCUDA\select_compute_arch.cmake;C:\Program Files\CMake\share\cmake-3.13\Modules\FindGLUT.cmake;C:\Program Files\CMake\share\cmake-3.13\Modules\FindOpenGL.cmake;C:\Program Files\CMake\share\cmake-3.13\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake\share\cmake-3.13\Modules\FindPackageMessage.cmake;C:\Program Files\CMake\share\cmake-3.13\Modules\FindPkgConfig.cmake;C:\Program Files\CMake\share\cmake-3.13\Modules\FindThreads.cmake;C:\Program Files\CMake\share\cmake-3.13\Modules\SelectLibraryConfigurations.cmake;C:\eigen-eigen-2e4aedfc8e06\cmake\FindAdolc.cmake;C:\eigen-eigen-2e4aedfc8e06\cmake\FindFFTW.cmake;C:\eigen-eigen-2e4aedfc8e06\cmake\FindGLEW.cmake;C:\eigen-eigen-2e4aedfc8e06\cmake\FindGMP.cmake;C:\eigen-eigen-2e4aedfc8e06\cmake\FindGoogleHash.cmake;C:\eigen-eigen-2e4aedfc8e06\cmake\FindMPFR.cmake;C:\eigen-eigen-2e4aedfc8e06\cmake\FindXsmm.cmake;C:\eigen-eigen-2e4aedfc8e06\unsupported\test\CMakeLists.txt;C:\eigen-eigen-2e4aedfc8e06\unsupported\test\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\eigen-eigen-2e4aedfc8e06\build\unsupported\test\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Building Custom Rule C:/eigen-eigen-2e4aedfc8e06/unsupported/test/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/eigen-eigen-2e4aedfc8e06 -BC:/eigen-eigen-2e4aedfc8e06/build --check-stamp-file C:/eigen-eigen-2e4aedfc8e06/build/unsupported/test/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:/eigen-eigen-2e4aedfc8e06/unsupported/test/CMakeLists.txt;C:\Program Files\CMake\share\cmake-3.13\Modules\CheckIncludeFile.cmake;C:\Program Files\CMake\share\cmake-3.13\Modules\CheckLibraryExists.cmake;C:\Program Files\CMake\share\cmake-3.13\Modules\CheckSymbolExists.cmake;C:\Program Files\CMake\share\cmake-3.13\Modules\FindCUDA.cmake;C:\Program Files\CMake\share\cmake-3.13\Modules\FindCUDA\select_compute_arch.cmake;C:\Program Files\CMake\share\cmake-3.13\Modules\FindGLUT.cmake;C:\Program Files\CMake\share\cmake-3.13\Modules\FindOpenGL.cmake;C:\Program Files\CMake\share\cmake-3.13\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake\share\cmake-3.13\Modules\FindPackageMessage.cmake;C:\Program Files\CMake\share\cmake-3.13\Modules\FindPkgConfig.cmake;C:\Program Files\CMake\share\cmake-3.13\Modules\FindThreads.cmake;C:\Program Files\CMake\share\cmake-3.13\Modules\SelectLibraryConfigurations.cmake;C:\eigen-eigen-2e4aedfc8e06\cmake\FindAdolc.cmake;C:\eigen-eigen-2e4aedfc8e06\cmake\FindFFTW.cmake;C:\eigen-eigen-2e4aedfc8e06\cmake\FindGLEW.cmake;C:\eigen-eigen-2e4aedfc8e06\cmake\FindGMP.cmake;C:\eigen-eigen-2e4aedfc8e06\cmake\FindGoogleHash.cmake;C:\eigen-eigen-2e4aedfc8e06\cmake\FindMPFR.cmake;C:\eigen-eigen-2e4aedfc8e06\cmake\FindXsmm.cmake;C:\eigen-eigen-2e4aedfc8e06\unsupported\test\CMakeLists.txt;C:\eigen-eigen-2e4aedfc8e06\unsupported\test\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\eigen-eigen-2e4aedfc8e06\build\unsupported\test\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="C:\eigen-eigen-2e4aedfc8e06\build\ZERO_CHECK.vcxproj">
+      <Project>{67A8B868-A8FA-31A8-9E35-0091F981D3DA}</Project>
+      <Name>ZERO_CHECK</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\eigen-eigen-2e4aedfc8e06\build\unsupported\test\matrix_exponential_1.vcxproj">
+      <Project>{49F4C35E-3E33-3BA8-BAC5-DA7DEDBB17ED}</Project>
+      <Name>matrix_exponential_1</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\eigen-eigen-2e4aedfc8e06\build\unsupported\test\matrix_exponential_2.vcxproj">
+      <Project>{915EA33F-EEA7-3590-B734-01FFF944097D}</Project>
+      <Name>matrix_exponential_2</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\eigen-eigen-2e4aedfc8e06\build\unsupported\test\matrix_exponential_3.vcxproj">
+      <Project>{EA508772-6F63-3F97-A04D-E10F4776A9C6}</Project>
+      <Name>matrix_exponential_3</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\eigen-eigen-2e4aedfc8e06\build\unsupported\test\matrix_exponential_4.vcxproj">
+      <Project>{03C434F8-91F2-3AB3-B453-81E56E705C9E}</Project>
+      <Name>matrix_exponential_4</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\eigen-eigen-2e4aedfc8e06\build\unsupported\test\matrix_exponential_5.vcxproj">
+      <Project>{2773E9A2-2987-35D5-93A4-BEDB374002D7}</Project>
+      <Name>matrix_exponential_5</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\eigen-eigen-2e4aedfc8e06\build\unsupported\test\matrix_exponential_6.vcxproj">
+      <Project>{7DB27F4D-733E-326B-A16F-5D8C0C679F16}</Project>
+      <Name>matrix_exponential_6</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\eigen-eigen-2e4aedfc8e06\build\unsupported\test\matrix_exponential_7.vcxproj">
+      <Project>{62566263-84D6-371F-A089-968CD015E15C}</Project>
+      <Name>matrix_exponential_7</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\eigen-eigen-2e4aedfc8e06\build\unsupported\test\matrix_exponential_8.vcxproj">
+      <Project>{975D8CB9-0F5F-3E23-A208-EFCF5042FC92}</Project>
+      <Name>matrix_exponential_8</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\eigen-eigen-2e4aedfc8e06\build\unsupported\test\matrix_exponential_9.vcxproj">
+      <Project>{6AC77DEF-0156-3467-BF97-C080750DA490}</Project>
+      <Name>matrix_exponential_9</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

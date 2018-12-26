@@ -1,0 +1,2339 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="MinSizeRel|x64">
+      <Configuration>MinSizeRel</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RelWithDebInfo|x64">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{F616A1E8-5152-3A7A-B661-66A663B88E9C}</ProjectGuid>
+    <WindowsTargetPlatformVersion>10.0.17763.0</WindowsTargetPlatformVersion>
+    <Keyword>Win32Proj</Keyword>
+    <Platform>x64</Platform>
+    <ProjectName>ALL_BUILD</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>C:\eigen-eigen-2e4aedfc8e06;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>C:\eigen-eigen-2e4aedfc8e06;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>C:\eigen-eigen-2e4aedfc8e06;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>C:\eigen-eigen-2e4aedfc8e06;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\eigen-eigen-2e4aedfc8e06\doc\CMakeLists.txt">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Custom Rule C:/eigen-eigen-2e4aedfc8e06/doc/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/eigen-eigen-2e4aedfc8e06 -BC:/eigen-eigen-2e4aedfc8e06/build --check-stamp-file C:/eigen-eigen-2e4aedfc8e06/build/doc/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:/eigen-eigen-2e4aedfc8e06/doc/CMakeLists.txt;C:\eigen-eigen-2e4aedfc8e06\doc\CMakeLists.txt;C:\eigen-eigen-2e4aedfc8e06\doc\Doxyfile.in;C:\eigen-eigen-2e4aedfc8e06\doc\eigendoxy_footer.html.in;C:\eigen-eigen-2e4aedfc8e06\doc\eigendoxy_header.html.in;C:\eigen-eigen-2e4aedfc8e06\doc\eigendoxy_layout.xml.in;C:\eigen-eigen-2e4aedfc8e06\unsupported\doc\eigendoxy_layout.xml.in;C:\eigen-eigen-2e4aedfc8e06\doc\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\eigen-eigen-2e4aedfc8e06\build\doc\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Custom Rule C:/eigen-eigen-2e4aedfc8e06/doc/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/eigen-eigen-2e4aedfc8e06 -BC:/eigen-eigen-2e4aedfc8e06/build --check-stamp-file C:/eigen-eigen-2e4aedfc8e06/build/doc/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:/eigen-eigen-2e4aedfc8e06/doc/CMakeLists.txt;C:\eigen-eigen-2e4aedfc8e06\doc\CMakeLists.txt;C:\eigen-eigen-2e4aedfc8e06\doc\Doxyfile.in;C:\eigen-eigen-2e4aedfc8e06\doc\eigendoxy_footer.html.in;C:\eigen-eigen-2e4aedfc8e06\doc\eigendoxy_header.html.in;C:\eigen-eigen-2e4aedfc8e06\doc\eigendoxy_layout.xml.in;C:\eigen-eigen-2e4aedfc8e06\unsupported\doc\eigendoxy_layout.xml.in;C:\eigen-eigen-2e4aedfc8e06\doc\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\eigen-eigen-2e4aedfc8e06\build\doc\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Building Custom Rule C:/eigen-eigen-2e4aedfc8e06/doc/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/eigen-eigen-2e4aedfc8e06 -BC:/eigen-eigen-2e4aedfc8e06/build --check-stamp-file C:/eigen-eigen-2e4aedfc8e06/build/doc/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:/eigen-eigen-2e4aedfc8e06/doc/CMakeLists.txt;C:\eigen-eigen-2e4aedfc8e06\doc\CMakeLists.txt;C:\eigen-eigen-2e4aedfc8e06\doc\Doxyfile.in;C:\eigen-eigen-2e4aedfc8e06\doc\eigendoxy_footer.html.in;C:\eigen-eigen-2e4aedfc8e06\doc\eigendoxy_header.html.in;C:\eigen-eigen-2e4aedfc8e06\doc\eigendoxy_layout.xml.in;C:\eigen-eigen-2e4aedfc8e06\unsupported\doc\eigendoxy_layout.xml.in;C:\eigen-eigen-2e4aedfc8e06\doc\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\eigen-eigen-2e4aedfc8e06\build\doc\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Building Custom Rule C:/eigen-eigen-2e4aedfc8e06/doc/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/eigen-eigen-2e4aedfc8e06 -BC:/eigen-eigen-2e4aedfc8e06/build --check-stamp-file C:/eigen-eigen-2e4aedfc8e06/build/doc/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:/eigen-eigen-2e4aedfc8e06/doc/CMakeLists.txt;C:\eigen-eigen-2e4aedfc8e06\doc\CMakeLists.txt;C:\eigen-eigen-2e4aedfc8e06\doc\Doxyfile.in;C:\eigen-eigen-2e4aedfc8e06\doc\eigendoxy_footer.html.in;C:\eigen-eigen-2e4aedfc8e06\doc\eigendoxy_header.html.in;C:\eigen-eigen-2e4aedfc8e06\doc\eigendoxy_layout.xml.in;C:\eigen-eigen-2e4aedfc8e06\unsupported\doc\eigendoxy_layout.xml.in;C:\eigen-eigen-2e4aedfc8e06\doc\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\eigen-eigen-2e4aedfc8e06\build\doc\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="C:\eigen-eigen-2e4aedfc8e06\build\ZERO_CHECK.vcxproj">
+      <Project>{67A8B868-A8FA-31A8-9E35-0091F981D3DA}</Project>
+      <Name>ZERO_CHECK</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\eigen-eigen-2e4aedfc8e06\build\doc\examples\CustomizingEigen_Inheritance.vcxproj">
+      <Project>{041FAD03-E891-3896-BA66-4899C3FB7400}</Project>
+      <Name>CustomizingEigen_Inheritance</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\eigen-eigen-2e4aedfc8e06\build\doc\examples\Cwise_erf.vcxproj">
+      <Project>{E8A34414-8504-395E-91DA-85516B4008AC}</Project>
+      <Name>Cwise_erf</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\eigen-eigen-2e4aedfc8e06\build\doc\examples\Cwise_erfc.vcxproj">
+      <Project>{CA84DCED-E4F6-3391-9357-E3460BDEFAB9}</Project>
+      <Name>Cwise_erfc</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\eigen-eigen-2e4aedfc8e06\build\doc\examples\Cwise_lgamma.vcxproj">
+      <Project>{96EDC7D0-6740-3DC0-A7E3-437673B5FCCD}</Project>
+      <Name>Cwise_lgamma</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\eigen-eigen-2e4aedfc8e06\build\doc\examples\DenseBase_middleCols_int.vcxproj">
+      <Project>{FD042E71-0076-3249-A2B7-638655ACFEA1}</Project>
+      <Name>DenseBase_middleCols_int</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\eigen-eigen-2e4aedfc8e06\build\doc\examples\DenseBase_middleRows_int.vcxproj">
+      <Project>{0D1F565F-3FB8-3158-808E-6921F3D03007}</Project>
+      <Name>DenseBase_middleRows_int</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\eigen-eigen-2e4aedfc8e06\build\doc\examples\DenseBase_template_int_middleCols.vcxproj">
+      <Project>{DD184E16-A459-3CA1-914D-28C70770A6AF}</Project>
+      <Name>DenseBase_template_int_middleCols</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\eigen-eigen-2e4aedfc8e06\build\doc\examples\DenseBase_template_int_middleRows.vcxproj">
+      <Project>{1E9F5682-76EA-3C0E-B88E-DE0F0EB2E739}</Project>
+      <Name>DenseBase_template_int_middleRows</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\eigen-eigen-2e4aedfc8e06\build\doc\examples\QuickStart_example.vcxproj">
+      <Project>{4E8B2118-76F1-30E8-B659-7F2F2626F79C}</Project>
+      <Name>QuickStart_example</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\eigen-eigen-2e4aedfc8e06\build\doc\examples\QuickStart_example2_dynamic.vcxproj">
+      <Project>{E9B83FC1-7A2D-31E1-8B9C-E0D9D7BEED36}</Project>
+      <Name>QuickStart_example2_dynamic</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\eigen-eigen-2e4aedfc8e06\build\doc\examples\QuickStart_example2_fixed.vcxproj">
+      <Project>{1F4B44B7-116F-3B60-8591-B49C9A3B4360}</Project>
+      <Name>QuickStart_example2_fixed</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\eigen-eigen-2e4aedfc8e06\build\doc\examples\TemplateKeyword_flexible.vcxproj">
+      <Project>{043EB3EF-2049-3528-A29F-675FE517D5C7}</Project>
+      <Name>TemplateKeyword_flexible</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\eigen-eigen-2e4aedfc8e06\build\doc\examples\TemplateKeyword_simple.vcxproj">
+      <Project>{57DC1FB5-6303-3E84-BAF6-F7A3E2B8AB17}</Project>
+      <Name>TemplateKeyword_simple</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\eigen-eigen-2e4aedfc8e06\build\doc\examples\TutorialInplaceLU.vcxproj">
+      <Project>{AE0261C5-A61B-37B0-A5EB-89BFF48B255C}</Project>
+      <Name>TutorialInplaceLU</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\eigen-eigen-2e4aedfc8e06\build\doc\examples\TutorialLinAlgComputeTwice.vcxproj">
+      <Project>{144A0054-DD0A-35B9-8D46-AB2F75B20975}</Project>
+      <Name>TutorialLinAlgComputeTwice</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\eigen-eigen-2e4aedfc8e06\build\doc\examples\TutorialLinAlgExComputeSolveError.vcxproj">
+      <Project>{65F6E543-D142-3D73-9147-B9BE9307DDFD}</Project>
+      <Name>TutorialLinAlgExComputeSolveError</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\eigen-eigen-2e4aedfc8e06\build\doc\examples\TutorialLinAlgExSolveColPivHouseholderQR.vcxproj">
+      <Project>{5AB95110-5716-3313-A68E-CB5FE7B68140}</Project>
+      <Name>TutorialLinAlgExSolveColPivHouseholderQR</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\eigen-eigen-2e4aedfc8e06\build\doc\examples\TutorialLinAlgExSolveLDLT.vcxproj">
+      <Project>{5BD3EEE2-8677-3F2E-86F6-225AD9A847E5}</Project>
+      <Name>TutorialLinAlgExSolveLDLT</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\eigen-eigen-2e4aedfc8e06\build\doc\examples\TutorialLinAlgInverseDeterminant.vcxproj">
+      <Project>{7617E6D5-9CB8-3C3C-9004-2CE7B1C9ED33}</Project>
+      <Name>TutorialLinAlgInverseDeterminant</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\eigen-eigen-2e4aedfc8e06\build\doc\examples\TutorialLinAlgRankRevealing.vcxproj">
+      <Project>{99176CF9-7B2C-3B4A-9E8C-4AB61ACBCD56}</Project>
+      <Name>TutorialLinAlgRankRevealing</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\eigen-eigen-2e4aedfc8e06\build\doc\examples\TutorialLinAlgSVDSolve.vcxproj">
+      <Project>{74224932-5127-3451-96D2-7FB9FC98D1AC}</Project>
+      <Name>TutorialLinAlgSVDSolve</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\eigen-eigen-2e4aedfc8e06\build\doc\examples\TutorialLinAlgSelfAdjointEigenSolver.vcxproj">
+      <Project>{FADF4026-5A3B-30D2-BC21-AED8E914E948}</Project>
+      <Name>TutorialLinAlgSelfAdjointEigenSolver</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\eigen-eigen-2e4aedfc8e06\build\doc\examples\TutorialLinAlgSetThreshold.vcxproj">
+      <Project>{33394187-EF07-3E8A-AE45-40E921331BC9}</Project>
+      <Name>TutorialLinAlgSetThreshold</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\eigen-eigen-2e4aedfc8e06\build\doc\examples\Tutorial_ArrayClass_accessors.vcxproj">
+      <Project>{C41A1899-9359-3A08-8757-C477E30C86F1}</Project>
+      <Name>Tutorial_ArrayClass_accessors</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\eigen-eigen-2e4aedfc8e06\build\doc\examples\Tutorial_ArrayClass_addition.vcxproj">
+      <Project>{57431720-5E47-3DFC-AA81-23382A7EAA34}</Project>
+      <Name>Tutorial_ArrayClass_addition</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\eigen-eigen-2e4aedfc8e06\build\doc\examples\Tutorial_ArrayClass_cwise_other.vcxproj">
+      <Project>{DA42F37C-0303-31CA-9847-70BB5D0AA125}</Project>
+      <Name>Tutorial_ArrayClass_cwise_other</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\eigen-eigen-2e4aedfc8e06\build\doc\examples\Tutorial_ArrayClass_interop.vcxproj">
+      <Project>{9CA5CB56-75A2-36D3-BAAE-098969608FC6}</Project>
+      <Name>Tutorial_ArrayClass_interop</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\eigen-eigen-2e4aedfc8e06\build\doc\examples\Tutorial_ArrayClass_interop_matrix.vcxproj">
+      <Project>{FDDD36F0-BC90-3961-9EAA-DF1DCBB5090B}</Project>
+      <Name>Tutorial_ArrayClass_interop_matrix</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\eigen-eigen-2e4aedfc8e06\build\doc\examples\Tutorial_ArrayClass_mult.vcxproj">
+      <Project>{CB8FD260-DFC0-3B10-BB67-4AD7C159297F}</Project>
+      <Name>Tutorial_ArrayClass_mult</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\eigen-eigen-2e4aedfc8e06\build\doc\examples\Tutorial_BlockOperations_block_assignment.vcxproj">
+      <Project>{62D8C766-F2C6-37D8-8AA8-93DEDEF49D92}</Project>
+      <Name>Tutorial_BlockOperations_block_assignment</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\eigen-eigen-2e4aedfc8e06\build\doc\examples\Tutorial_BlockOperations_colrow.vcxproj">
+      <Project>{0824E6B4-76F1-302D-AC7F-0711EF3A1CF0}</Project>
+      <Name>Tutorial_BlockOperations_colrow</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\eigen-eigen-2e4aedfc8e06\build\doc\examples\Tutorial_BlockOperations_corner.vcxproj">
+      <Project>{0CD6288C-1523-3D76-8E1E-EFDB4BC98371}</Project>
+      <Name>Tutorial_BlockOperations_corner</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\eigen-eigen-2e4aedfc8e06\build\doc\examples\Tutorial_BlockOperations_print_block.vcxproj">
+      <Project>{46E435AE-7FC6-3B12-9231-74414EE72DC8}</Project>
+      <Name>Tutorial_BlockOperations_print_block</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\eigen-eigen-2e4aedfc8e06\build\doc\examples\Tutorial_BlockOperations_vector.vcxproj">
+      <Project>{8C079D05-51EA-33B4-B8C5-868073C42712}</Project>
+      <Name>Tutorial_BlockOperations_vector</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\eigen-eigen-2e4aedfc8e06\build\doc\examples\Tutorial_PartialLU_solve.vcxproj">
+      <Project>{91DCBA73-12EF-399A-AD1C-4F502DC205BA}</Project>
+      <Name>Tutorial_PartialLU_solve</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\eigen-eigen-2e4aedfc8e06\build\doc\examples\Tutorial_ReductionsVisitorsBroadcasting_broadcast_1nn.vcxproj">
+      <Project>{C581B1E4-F571-32EE-9F54-5A37BFF25E3E}</Project>
+      <Name>Tutorial_ReductionsVisitorsBroadcasting_broadcast_1nn</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\eigen-eigen-2e4aedfc8e06\build\doc\examples\Tutorial_ReductionsVisitorsBroadcasting_broadcast_simple.vcxproj">
+      <Project>{704210B5-B739-3CFF-BB9F-EB917806C70E}</Project>
+      <Name>Tutorial_ReductionsVisitorsBroadcasting_broadcast_simple</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\eigen-eigen-2e4aedfc8e06\build\doc\examples\Tutorial_ReductionsVisitorsBroadcasting_broadcast_simple_rowwise.vcxproj">
+      <Project>{1447D811-CECC-365F-8B49-6F4E2D53BF11}</Project>
+      <Name>Tutorial_ReductionsVisitorsBroadcasting_broadcast_simple_rowwise</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\eigen-eigen-2e4aedfc8e06\build\doc\examples\Tutorial_ReductionsVisitorsBroadcasting_colwise.vcxproj">
+      <Project>{B2CC0FAA-7C9B-3EBA-8EE4-57BB854A4DC9}</Project>
+      <Name>Tutorial_ReductionsVisitorsBroadcasting_colwise</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\eigen-eigen-2e4aedfc8e06\build\doc\examples\Tutorial_ReductionsVisitorsBroadcasting_maxnorm.vcxproj">
+      <Project>{0DC72748-211E-34BF-B625-DFA6C1937D27}</Project>
+      <Name>Tutorial_ReductionsVisitorsBroadcasting_maxnorm</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\eigen-eigen-2e4aedfc8e06\build\doc\examples\Tutorial_ReductionsVisitorsBroadcasting_reductions_bool.vcxproj">
+      <Project>{0AC1D7B8-BC42-3C88-B33E-02DCC4A04198}</Project>
+      <Name>Tutorial_ReductionsVisitorsBroadcasting_reductions_bool</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\eigen-eigen-2e4aedfc8e06\build\doc\examples\Tutorial_ReductionsVisitorsBroadcasting_reductions_norm.vcxproj">
+      <Project>{7F55F543-8782-3285-AA12-D5CBC82F2B12}</Project>
+      <Name>Tutorial_ReductionsVisitorsBroadcasting_reductions_norm</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\eigen-eigen-2e4aedfc8e06\build\doc\examples\Tutorial_ReductionsVisitorsBroadcasting_reductions_operatornorm.vcxproj">
+      <Project>{622831FB-EEE5-35A6-9CD6-EC728859D105}</Project>
+      <Name>Tutorial_ReductionsVisitorsBroadcasting_reductions_operatornorm</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\eigen-eigen-2e4aedfc8e06\build\doc\examples\Tutorial_ReductionsVisitorsBroadcasting_rowwise.vcxproj">
+      <Project>{CA8F3CCE-A6F2-3B4B-A246-B9BFB047BC21}</Project>
+      <Name>Tutorial_ReductionsVisitorsBroadcasting_rowwise</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\eigen-eigen-2e4aedfc8e06\build\doc\examples\Tutorial_ReductionsVisitorsBroadcasting_visitors.vcxproj">
+      <Project>{C7FB8947-07B0-3894-8EF5-BA14277B3BD8}</Project>
+      <Name>Tutorial_ReductionsVisitorsBroadcasting_visitors</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\eigen-eigen-2e4aedfc8e06\build\doc\examples\Tutorial_simple_example_dynamic_size.vcxproj">
+      <Project>{B2C034D9-8607-3FAD-91BD-69865D6F24F4}</Project>
+      <Name>Tutorial_simple_example_dynamic_size</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\eigen-eigen-2e4aedfc8e06\build\doc\examples\Tutorial_simple_example_fixed_size.vcxproj">
+      <Project>{71736AE6-AC10-3375-908A-FD6B8D7FD85D}</Project>
+      <Name>Tutorial_simple_example_fixed_size</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\eigen-eigen-2e4aedfc8e06\build\doc\examples\class_Block.vcxproj">
+      <Project>{0562950B-BA6A-3F29-BF1E-CD6D282FCAAE}</Project>
+      <Name>class_Block</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\eigen-eigen-2e4aedfc8e06\build\doc\examples\class_CwiseBinaryOp.vcxproj">
+      <Project>{DC06D96F-7CEF-3E6C-8862-C990C6402997}</Project>
+      <Name>class_CwiseBinaryOp</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\eigen-eigen-2e4aedfc8e06\build\doc\examples\class_CwiseUnaryOp.vcxproj">
+      <Project>{D8AA2AEB-5B28-3687-8612-46FA72A8B226}</Project>
+      <Name>class_CwiseUnaryOp</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\eigen-eigen-2e4aedfc8e06\build\doc\examples\class_CwiseUnaryOp_ptrfun.vcxproj">
+      <Project>{B3EEBB79-133F-3808-A59C-E6BFA4703B7F}</Project>
+      <Name>class_CwiseUnaryOp_ptrfun</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\eigen-eigen-2e4aedfc8e06\build\doc\examples\class_FixedBlock.vcxproj">
+      <Project>{DB513156-2C65-3456-851B-CA01B4FCD506}</Project>
+      <Name>class_FixedBlock</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\eigen-eigen-2e4aedfc8e06\build\doc\examples\class_FixedReshaped.vcxproj">
+      <Project>{72FB6393-CA20-3EC8-AC89-5F1AC61FAD00}</Project>
+      <Name>class_FixedReshaped</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\eigen-eigen-2e4aedfc8e06\build\doc\examples\class_FixedVectorBlock.vcxproj">
+      <Project>{A06D683E-1B2D-3E37-8DA1-990074C11ABE}</Project>
+      <Name>class_FixedVectorBlock</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\eigen-eigen-2e4aedfc8e06\build\doc\examples\class_Reshaped.vcxproj">
+      <Project>{F3D75335-6333-3DA6-B280-FDA6111E8E84}</Project>
+      <Name>class_Reshaped</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\eigen-eigen-2e4aedfc8e06\build\doc\examples\class_VectorBlock.vcxproj">
+      <Project>{F5AC7017-6C00-30E1-9B2C-436C4BE3E9D0}</Project>
+      <Name>class_VectorBlock</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\eigen-eigen-2e4aedfc8e06\build\doc\snippets\compile_AngleAxis_mimic_euler.vcxproj">
+      <Project>{500746BD-50D0-353A-823E-4E03EBCDF092}</Project>
+      <Name>compile_AngleAxis_mimic_euler</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\eigen-eigen-2e4aedfc8e06\build\doc\snippets\compile_BiCGSTAB_simple.vcxproj">
+      <Project>{A5AC107D-2B86-39BD-A75F-1E5903186F84}</Project>
+      <Name>compile_BiCGSTAB_simple</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\eigen-eigen-2e4aedfc8e06\build\doc\snippets\compile_BiCGSTAB_step_by_step.vcxproj">
+      <Project>{BA87995E-14E8-3882-BBBE-39A4B732C868}</Project>
+      <Name>compile_BiCGSTAB_step_by_step</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\eigen-eigen-2e4aedfc8e06\build\doc\snippets\compile_ColPivHouseholderQR_solve.vcxproj">
+      <Project>{0E35A956-26F4-317A-BBA2-3C5C762CB4FA}</Project>
+      <Name>compile_ColPivHouseholderQR_solve</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\eigen-eigen-2e4aedfc8e06\build\doc\snippets\compile_ComplexEigenSolver_compute.vcxproj">
+      <Project>{294B294F-B4E3-3733-B68A-8807007D7D2D}</Project>
+      <Name>compile_ComplexEigenSolver_compute</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\eigen-eigen-2e4aedfc8e06\build\doc\snippets\compile_ComplexEigenSolver_eigenvalues.vcxproj">
+      <Project>{9408A038-2653-31AC-9AC6-EA54F9054EA4}</Project>
+      <Name>compile_ComplexEigenSolver_eigenvalues</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\eigen-eigen-2e4aedfc8e06\build\doc\snippets\compile_ComplexEigenSolver_eigenvectors.vcxproj">
+      <Project>{74C1A2F8-1774-34BE-9C4E-6131B8C89B48}</Project>
+      <Name>compile_ComplexEigenSolver_eigenvectors</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\eigen-eigen-2e4aedfc8e06\build\doc\snippets\compile_ComplexSchur_compute.vcxproj">
+      <Project>{ADF62F36-4225-3FB8-A85D-92E12B283B1C}</Project>
+      <Name>compile_ComplexSchur_compute</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\eigen-eigen-2e4aedfc8e06\build\doc\snippets\compile_ComplexSchur_matrixT.vcxproj">
+      <Project>{193823BB-C53C-3AA2-978F-5A1E4783A946}</Project>
+      <Name>compile_ComplexSchur_matrixT</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\eigen-eigen-2e4aedfc8e06\build\doc\snippets\compile_ComplexSchur_matrixU.vcxproj">
+      <Project>{723582E5-8F70-3B0D-BEA7-357E31CE5319}</Project>
+      <Name>compile_ComplexSchur_matrixU</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\eigen-eigen-2e4aedfc8e06\build\doc\snippets\compile_Cwise_abs.vcxproj">
+      <Project>{639F898B-6320-3F2D-BFDA-90975F1CD6AD}</Project>
+      <Name>compile_Cwise_abs</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\eigen-eigen-2e4aedfc8e06\build\doc\snippets\compile_Cwise_abs2.vcxproj">
+      <Project>{31E88E0E-9B9A-3B98-8CBA-26E028023285}</Project>
+      <Name>compile_Cwise_abs2</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\eigen-eigen-2e4aedfc8e06\build\doc\snippets\compile_Cwise_acos.vcxproj">
+      <Project>{D131AEF2-9D97-362A-8731-FD345C98840D}</Project>
+      <Name>compile_Cwise_acos</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\eigen-eigen-2e4aedfc8e06\build\doc\snippets\compile_Cwise_arg.vcxproj">
+      <Project>{7AEA77D2-B8DE-34F8-BA16-C8615D261235}</Project>
+      <Name>compile_Cwise_arg</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\eigen-eigen-2e4aedfc8e06\build\doc\snippets\compile_Cwise_array_power_array.vcxproj">
+      <Project>{328373C4-9B1D-39F8-A4B9-63DA622A6A34}</Project>
+      <Name>compile_Cwise_array_power_array</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\eigen-eigen-2e4aedfc8e06\build\doc\snippets\compile_Cwise_asin.vcxproj">
+      <Project>{390AC2B9-8A7F-3C18-8D8C-94B3F40C8BFC}</Project>
+      <Name>compile_Cwise_asin</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\eigen-eigen-2e4aedfc8e06\build\doc\snippets\compile_Cwise_atan.vcxproj">
+      <Project>{67F101C5-5A4B-3853-AE68-33CC155C5BB2}</Project>
+      <Name>compile_Cwise_atan</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\eigen-eigen-2e4aedfc8e06\build\doc\snippets\compile_Cwise_boolean_and.vcxproj">
+      <Project>{3F9E604E-35CA-36FA-92ED-86B4FD364056}</Project>
+      <Name>compile_Cwise_boolean_and</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\eigen-eigen-2e4aedfc8e06\build\doc\snippets\compile_Cwise_boolean_not.vcxproj">
+      <Project>{2E49D011-8148-3BA3-9C06-417FD0E7C16D}</Project>
+      <Name>compile_Cwise_boolean_not</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\eigen-eigen-2e4aedfc8e06\build\doc\snippets\compile_Cwise_boolean_or.vcxproj">
+      <Project>{A14CAD8B-6761-312C-BB8F-CB001D947558}</Project>
+      <Name>compile_Cwise_boolean_or</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\eigen-eigen-2e4aedfc8e06\build\doc\snippets\compile_Cwise_boolean_xor.vcxproj">
+      <Project>{AA107FDC-4070-3BE5-ACEF-BC5FC0C7C4CC}</Project>
+      <Name>compile_Cwise_boolean_xor</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\eigen-eigen-2e4aedfc8e06\build\doc\snippets\compile_Cwise_ceil.vcxproj">
+      <Project>{16F33802-0B0A-30F6-B44F-440372F76684}</Project>
+      <Name>compile_Cwise_ceil</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\eigen-eigen-2e4aedfc8e06\build\doc\snippets\compile_Cwise_cos.vcxproj">
+      <Project>{96F55BCD-8714-3297-973F-E7981BB605D4}</Project>
+      <Name>compile_Cwise_cos</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\eigen-eigen-2e4aedfc8e06\build\doc\snippets\compile_Cwise_cosh.vcxproj">
+      <Project>{645B94E2-E493-3536-9081-2367511B82D1}</Project>
+      <Name>compile_Cwise_cosh</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\eigen-eigen-2e4aedfc8e06\build\doc\snippets\compile_Cwise_cube.vcxproj">
+      <Project>{12F6D9AD-1FF0-3D93-84F9-0966B2E8FEE6}</Project>
+      <Name>compile_Cwise_cube</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\eigen-eigen-2e4aedfc8e06\build\doc\snippets\compile_Cwise_equal_equal.vcxproj">
+      <Project>{E300674E-07F7-32F8-BA94-E8A204D73234}</Project>
+      <Name>compile_Cwise_equal_equal</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\eigen-eigen-2e4aedfc8e06\build\doc\snippets\compile_Cwise_exp.vcxproj">
+      <Project>{8DC3C45D-0BD5-364A-A1C2-DBA89AB16EEA}</Project>
+      <Name>compile_Cwise_exp</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\eigen-eigen-2e4aedfc8e06\build\doc\snippets\compile_Cwise_floor.vcxproj">
+      <Project>{E93A8BD3-2D64-3DFA-9CEE-AE0C6E0C02D1}</Project>
+      <Name>compile_Cwise_floor</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\eigen-eigen-2e4aedfc8e06\build\doc\snippets\compile_Cwise_greater.vcxproj">
+      <Project>{221378E7-49E2-3A2A-A0AD-02A35E9908FA}</Project>
+      <Name>compile_Cwise_greater</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\eigen-eigen-2e4aedfc8e06\build\doc\snippets\compile_Cwise_greater_equal.vcxproj">
+      <Project>{DB2D84E5-51FA-3EB9-8A7B-24D23B79C1AB}</Project>
+      <Name>compile_Cwise_greater_equal</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\eigen-eigen-2e4aedfc8e06\build\doc\snippets\compile_Cwise_inverse.vcxproj">
+      <Project>{5B09C55B-C752-3825-80B7-03E7C5C20B38}</Project>
+      <Name>compile_Cwise_inverse</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\eigen-eigen-2e4aedfc8e06\build\doc\snippets\compile_Cwise_isFinite.vcxproj">
+      <Project>{F0AF59C5-A8C3-3184-9749-114DBF0F30B4}</Project>
+      <Name>compile_Cwise_isFinite</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\eigen-eigen-2e4aedfc8e06\build\doc\snippets\compile_Cwise_isInf.vcxproj">
+      <Project>{A69C9D0E-E2E1-3C77-8F27-2F674B3D53FA}</Project>
+      <Name>compile_Cwise_isInf</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\eigen-eigen-2e4aedfc8e06\build\doc\snippets\compile_Cwise_isNaN.vcxproj">
+      <Project>{A0DA5AE1-01AA-3A66-AB0A-AE9A6FFA3E40}</Project>
+      <Name>compile_Cwise_isNaN</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\eigen-eigen-2e4aedfc8e06\build\doc\snippets\compile_Cwise_less.vcxproj">
+      <Project>{E0BDEB5B-D8EC-3611-8231-0E6F4D3C9C48}</Project>
+      <Name>compile_Cwise_less</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\eigen-eigen-2e4aedfc8e06\build\doc\snippets\compile_Cwise_less_equal.vcxproj">
+      <Project>{C5B4C057-5877-36C8-98ED-F6330C729B11}</Project>
+      <Name>compile_Cwise_less_equal</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\eigen-eigen-2e4aedfc8e06\build\doc\snippets\compile_Cwise_log.vcxproj">
+      <Project>{276AC950-1473-31B1-BC87-3075A16DEB67}</Project>
+      <Name>compile_Cwise_log</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\eigen-eigen-2e4aedfc8e06\build\doc\snippets\compile_Cwise_log10.vcxproj">
+      <Project>{4821CADE-7C4A-3B71-8D5B-18283828DB29}</Project>
+      <Name>compile_Cwise_log10</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\eigen-eigen-2e4aedfc8e06\build\doc\snippets\compile_Cwise_max.vcxproj">
+      <Project>{2DB3FCC5-4918-39EF-BC2C-3E5B66150D33}</Project>
+      <Name>compile_Cwise_max</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\eigen-eigen-2e4aedfc8e06\build\doc\snippets\compile_Cwise_min.vcxproj">
+      <Project>{8F781619-D5E8-3B3F-8B3C-B8D139C1BDB2}</Project>
+      <Name>compile_Cwise_min</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\eigen-eigen-2e4aedfc8e06\build\doc\snippets\compile_Cwise_minus.vcxproj">
+      <Project>{19F2849D-B4CF-3A62-81D0-A4BDD8A0505C}</Project>
+      <Name>compile_Cwise_minus</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\eigen-eigen-2e4aedfc8e06\build\doc\snippets\compile_Cwise_minus_equal.vcxproj">
+      <Project>{A2F8C277-F94A-316E-8AAA-C0B3A0CAFC6D}</Project>
+      <Name>compile_Cwise_minus_equal</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\eigen-eigen-2e4aedfc8e06\build\doc\snippets\compile_Cwise_not_equal.vcxproj">
+      <Project>{C7DDCF11-E930-328E-BE0F-186AE04157D9}</Project>
+      <Name>compile_Cwise_not_equal</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\eigen-eigen-2e4aedfc8e06\build\doc\snippets\compile_Cwise_plus.vcxproj">
+      <Project>{A0371D43-F876-3FEF-9603-FF5F0655429C}</Project>
+      <Name>compile_Cwise_plus</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\eigen-eigen-2e4aedfc8e06\build\doc\snippets\compile_Cwise_plus_equal.vcxproj">
+      <Project>{EA35F33E-33B2-3978-B3AA-05100791C819}</Project>
+      <Name>compile_Cwise_plus_equal</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\eigen-eigen-2e4aedfc8e06\build\doc\snippets\compile_Cwise_pow.vcxproj">
+      <Project>{15FA428B-16F3-33EA-B62C-ABF5FDEBA0E6}</Project>
+      <Name>compile_Cwise_pow</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\eigen-eigen-2e4aedfc8e06\build\doc\snippets\compile_Cwise_product.vcxproj">
+      <Project>{787BA38D-E100-3D2E-B905-6B848A60D95E}</Project>
+      <Name>compile_Cwise_product</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\eigen-eigen-2e4aedfc8e06\build\doc\snippets\compile_Cwise_quotient.vcxproj">
+      <Project>{DD610CE9-F716-370A-B1DA-394B67F6F2ED}</Project>
+      <Name>compile_Cwise_quotient</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\eigen-eigen-2e4aedfc8e06\build\doc\snippets\compile_Cwise_round.vcxproj">
+      <Project>{3FE8F4D2-B318-3990-BFDD-3D5AEABA0F5D}</Project>
+      <Name>compile_Cwise_round</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\eigen-eigen-2e4aedfc8e06\build\doc\snippets\compile_Cwise_scalar_power_array.vcxproj">
+      <Project>{6AA2FAAE-4077-36B3-8E43-246C701249F0}</Project>
+      <Name>compile_Cwise_scalar_power_array</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\eigen-eigen-2e4aedfc8e06\build\doc\snippets\compile_Cwise_sign.vcxproj">
+      <Project>{2A78D04F-5E3E-3548-95A9-3B540887F0F2}</Project>
+      <Name>compile_Cwise_sign</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\eigen-eigen-2e4aedfc8e06\build\doc\snippets\compile_Cwise_sin.vcxproj">
+      <Project>{AEDE545C-B83F-3628-BCAA-19BA2010883E}</Project>
+      <Name>compile_Cwise_sin</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\eigen-eigen-2e4aedfc8e06\build\doc\snippets\compile_Cwise_sinh.vcxproj">
+      <Project>{E6C94C1B-2BE6-33E0-A60F-FB61EADF0D6D}</Project>
+      <Name>compile_Cwise_sinh</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\eigen-eigen-2e4aedfc8e06\build\doc\snippets\compile_Cwise_slash_equal.vcxproj">
+      <Project>{C24C6339-6363-30D6-83D5-44AD8A130FD6}</Project>
+      <Name>compile_Cwise_slash_equal</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\eigen-eigen-2e4aedfc8e06\build\doc\snippets\compile_Cwise_sqrt.vcxproj">
+      <Project>{A1F3CA04-B746-3AC6-B67F-FBD2AA0AE9BA}</Project>
+      <Name>compile_Cwise_sqrt</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\eigen-eigen-2e4aedfc8e06\build\doc\snippets\compile_Cwise_square.vcxproj">
+      <Project>{87647CF7-CBD5-3F70-9950-4B3119B657D5}</Project>
+      <Name>compile_Cwise_square</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\eigen-eigen-2e4aedfc8e06\build\doc\snippets\compile_Cwise_tan.vcxproj">
+      <Project>{E251AC4B-CB45-3FD5-A7FC-B40449625906}</Project>
+      <Name>compile_Cwise_tan</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\eigen-eigen-2e4aedfc8e06\build\doc\snippets\compile_Cwise_tanh.vcxproj">
+      <Project>{08C88F3C-070C-3895-BE38-3FAF2BFC96D8}</Project>
+      <Name>compile_Cwise_tanh</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\eigen-eigen-2e4aedfc8e06\build\doc\snippets\compile_Cwise_times_equal.vcxproj">
+      <Project>{19DBCF07-AA99-3A80-920D-3B4077C0CD83}</Project>
+      <Name>compile_Cwise_times_equal</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\eigen-eigen-2e4aedfc8e06\build\doc\snippets\compile_DenseBase_LinSpaced.vcxproj">
+      <Project>{FB69D4BE-675C-37BA-B202-FB2C4FF9683D}</Project>
+      <Name>compile_DenseBase_LinSpaced</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\eigen-eigen-2e4aedfc8e06\build\doc\snippets\compile_DenseBase_LinSpacedInt.vcxproj">
+      <Project>{1AE2A591-F79B-3649-9191-4B8B90FD12C5}</Project>
+      <Name>compile_DenseBase_LinSpacedInt</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\eigen-eigen-2e4aedfc8e06\build\doc\snippets\compile_DenseBase_LinSpaced_seq.vcxproj">
+      <Project>{E31D7A0F-72C0-35AD-AFCC-276AC6BA1523}</Project>
+      <Name>compile_DenseBase_LinSpaced_seq</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\eigen-eigen-2e4aedfc8e06\build\doc\snippets\compile_DenseBase_setLinSpaced.vcxproj">
+      <Project>{9AD6E1FD-12F9-3927-8949-E27DA2DD5B82}</Project>
+      <Name>compile_DenseBase_setLinSpaced</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\eigen-eigen-2e4aedfc8e06\build\doc\snippets\compile_DirectionWise_hnormalized.vcxproj">
+      <Project>{704AB55E-4E6D-308B-ADBC-522E7B58DA7E}</Project>
+      <Name>compile_DirectionWise_hnormalized</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\eigen-eigen-2e4aedfc8e06\build\doc\snippets\compile_DirectionWise_replicate.vcxproj">
+      <Project>{550C07F9-08B1-30A0-9A19-7D8CA301D526}</Project>
+      <Name>compile_DirectionWise_replicate</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\eigen-eigen-2e4aedfc8e06\build\doc\snippets\compile_DirectionWise_replicate_int.vcxproj">
+      <Project>{A2FDB6A4-3234-3A00-A58E-ADCEDF360763}</Project>
+      <Name>compile_DirectionWise_replicate_int</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\eigen-eigen-2e4aedfc8e06\build\doc\snippets\compile_EigenSolver_EigenSolver_MatrixType.vcxproj">
+      <Project>{B58D7769-0EFC-3A04-A08A-754A996CC34E}</Project>
+      <Name>compile_EigenSolver_EigenSolver_MatrixType</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\eigen-eigen-2e4aedfc8e06\build\doc\snippets\compile_EigenSolver_compute.vcxproj">
+      <Project>{2AE8A868-A199-3D7B-9E7E-6134C0C6F72B}</Project>
+      <Name>compile_EigenSolver_compute</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\eigen-eigen-2e4aedfc8e06\build\doc\snippets\compile_EigenSolver_eigenvalues.vcxproj">
+      <Project>{03C6342D-0082-3720-A72D-4F29ACBAE4A4}</Project>
+      <Name>compile_EigenSolver_eigenvalues</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\eigen-eigen-2e4aedfc8e06\build\doc\snippets\compile_EigenSolver_eigenvectors.vcxproj">
+      <Project>{ADA5BB52-D8D2-3E54-AA33-60E183694E4B}</Project>
+      <Name>compile_EigenSolver_eigenvectors</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\eigen-eigen-2e4aedfc8e06\build\doc\snippets\compile_EigenSolver_pseudoEigenvectors.vcxproj">
+      <Project>{98A327FC-89DD-346B-9F87-498B5EAA8D7E}</Project>
+      <Name>compile_EigenSolver_pseudoEigenvectors</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\eigen-eigen-2e4aedfc8e06\build\doc\snippets\compile_FullPivHouseholderQR_solve.vcxproj">
+      <Project>{E1959C88-7EE4-348A-9D60-0F6867D3DB1B}</Project>
+      <Name>compile_FullPivHouseholderQR_solve</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\eigen-eigen-2e4aedfc8e06\build\doc\snippets\compile_FullPivLU_image.vcxproj">
+      <Project>{FFC63A75-8791-396A-B5D9-A7921FCE64A9}</Project>
+      <Name>compile_FullPivLU_image</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\eigen-eigen-2e4aedfc8e06\build\doc\snippets\compile_FullPivLU_kernel.vcxproj">
+      <Project>{6E541D53-DA40-39D0-89B9-0D50727E7A5A}</Project>
+      <Name>compile_FullPivLU_kernel</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\eigen-eigen-2e4aedfc8e06\build\doc\snippets\compile_FullPivLU_solve.vcxproj">
+      <Project>{0D0D8044-2D72-3579-B118-C10C706D8438}</Project>
+      <Name>compile_FullPivLU_solve</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\eigen-eigen-2e4aedfc8e06\build\doc\snippets\compile_GeneralizedEigenSolver.vcxproj">
+      <Project>{32FC331C-EEAD-3BCE-8747-1141A2A78F5D}</Project>
+      <Name>compile_GeneralizedEigenSolver</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\eigen-eigen-2e4aedfc8e06\build\doc\snippets\compile_HessenbergDecomposition_compute.vcxproj">
+      <Project>{2DBEDD5E-2D59-383D-9CDA-52FA07254813}</Project>
+      <Name>compile_HessenbergDecomposition_compute</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\eigen-eigen-2e4aedfc8e06\build\doc\snippets\compile_HessenbergDecomposition_matrixH.vcxproj">
+      <Project>{DDAD9F3C-7473-396E-9A42-349186C5D370}</Project>
+      <Name>compile_HessenbergDecomposition_matrixH</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\eigen-eigen-2e4aedfc8e06\build\doc\snippets\compile_HessenbergDecomposition_packedMatrix.vcxproj">
+      <Project>{054A5485-6568-3FB6-992A-3922576E8213}</Project>
+      <Name>compile_HessenbergDecomposition_packedMatrix</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\eigen-eigen-2e4aedfc8e06\build\doc\snippets\compile_HouseholderQR_householderQ.vcxproj">
+      <Project>{BFF1CD6B-6A09-3B43-B70D-D9FC8E12EEAB}</Project>
+      <Name>compile_HouseholderQR_householderQ</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\eigen-eigen-2e4aedfc8e06\build\doc\snippets\compile_HouseholderQR_solve.vcxproj">
+      <Project>{111B9EEC-2B54-3A7D-B068-60EC08CCD064}</Project>
+      <Name>compile_HouseholderQR_solve</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\eigen-eigen-2e4aedfc8e06\build\doc\snippets\compile_HouseholderSequence_HouseholderSequence.vcxproj">
+      <Project>{96F00291-65E7-3323-B8D1-3B7A1B7A4D13}</Project>
+      <Name>compile_HouseholderSequence_HouseholderSequence</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\eigen-eigen-2e4aedfc8e06\build\doc\snippets\compile_IOFormat.vcxproj">
+      <Project>{D81343ED-FE0C-3FD4-B6D0-B56CD4C1A273}</Project>
+      <Name>compile_IOFormat</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\eigen-eigen-2e4aedfc8e06\build\doc\snippets\compile_JacobiSVD_basic.vcxproj">
+      <Project>{4F7398FF-3D5D-3A65-8719-E6C0BDF9BBEE}</Project>
+      <Name>compile_JacobiSVD_basic</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\eigen-eigen-2e4aedfc8e06\build\doc\snippets\compile_Jacobi_makeGivens.vcxproj">
+      <Project>{0CBB5C02-AC76-306B-8646-C6013746339C}</Project>
+      <Name>compile_Jacobi_makeGivens</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\eigen-eigen-2e4aedfc8e06\build\doc\snippets\compile_Jacobi_makeJacobi.vcxproj">
+      <Project>{EA8C6A49-B197-3264-BF42-46C41B7192B8}</Project>
+      <Name>compile_Jacobi_makeJacobi</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\eigen-eigen-2e4aedfc8e06\build\doc\snippets\compile_LLT_example.vcxproj">
+      <Project>{2968457D-2415-314C-A7B2-DB0F9A73A243}</Project>
+      <Name>compile_LLT_example</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\eigen-eigen-2e4aedfc8e06\build\doc\snippets\compile_LLT_solve.vcxproj">
+      <Project>{78154B66-DF92-3A91-BDEE-67EC64A874F8}</Project>
+      <Name>compile_LLT_solve</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\eigen-eigen-2e4aedfc8e06\build\doc\snippets\compile_LeastSquaresNormalEquations.vcxproj">
+      <Project>{4AA6D1D4-7E86-3570-8A0E-033F9F793FDB}</Project>
+      <Name>compile_LeastSquaresNormalEquations</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\eigen-eigen-2e4aedfc8e06\build\doc\snippets\compile_LeastSquaresQR.vcxproj">
+      <Project>{7E370325-AF20-3516-A2D0-DFB4582893A4}</Project>
+      <Name>compile_LeastSquaresQR</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\eigen-eigen-2e4aedfc8e06\build\doc\snippets\compile_Map_general_stride.vcxproj">
+      <Project>{F4D5B35B-1EA0-303E-AE22-D6C2D372A03A}</Project>
+      <Name>compile_Map_general_stride</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\eigen-eigen-2e4aedfc8e06\build\doc\snippets\compile_Map_inner_stride.vcxproj">
+      <Project>{FE646D1B-639C-33DD-B7AC-FBBA498E5539}</Project>
+      <Name>compile_Map_inner_stride</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\eigen-eigen-2e4aedfc8e06\build\doc\snippets\compile_Map_outer_stride.vcxproj">
+      <Project>{C91E89BC-50A3-352A-AA41-F119F3A7AA43}</Project>
+      <Name>compile_Map_outer_stride</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\eigen-eigen-2e4aedfc8e06\build\doc\snippets\compile_Map_placement_new.vcxproj">
+      <Project>{BD29514C-73AA-3D91-9161-1D00CCDF061A}</Project>
+      <Name>compile_Map_placement_new</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\eigen-eigen-2e4aedfc8e06\build\doc\snippets\compile_Map_simple.vcxproj">
+      <Project>{E147BF0C-5770-3579-9715-944EB27952EA}</Project>
+      <Name>compile_Map_simple</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\eigen-eigen-2e4aedfc8e06\build\doc\snippets\compile_MatrixBase_adjoint.vcxproj">
+      <Project>{06EE9E4C-E475-35F2-AB9C-03396D837BD0}</Project>
+      <Name>compile_MatrixBase_adjoint</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\eigen-eigen-2e4aedfc8e06\build\doc\snippets\compile_MatrixBase_all.vcxproj">
+      <Project>{564E9F25-5FF9-30BF-A174-DE97EFCC449C}</Project>
+      <Name>compile_MatrixBase_all</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\eigen-eigen-2e4aedfc8e06\build\doc\snippets\compile_MatrixBase_applyOnTheLeft.vcxproj">
+      <Project>{B6C0C8CE-F57F-38E8-B1B2-2615BDC0E482}</Project>
+      <Name>compile_MatrixBase_applyOnTheLeft</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\eigen-eigen-2e4aedfc8e06\build\doc\snippets\compile_MatrixBase_applyOnTheRight.vcxproj">
+      <Project>{D7AFBFF2-DC4F-384F-A116-638A8028F706}</Project>
+      <Name>compile_MatrixBase_applyOnTheRight</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\eigen-eigen-2e4aedfc8e06\build\doc\snippets\compile_MatrixBase_array.vcxproj">
+      <Project>{8099AC57-7855-33F9-833F-FA8D914D2DDD}</Project>
+      <Name>compile_MatrixBase_array</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\eigen-eigen-2e4aedfc8e06\build\doc\snippets\compile_MatrixBase_array_const.vcxproj">
+      <Project>{0D89A353-24F9-35E2-9517-7191CEB831B5}</Project>
+      <Name>compile_MatrixBase_array_const</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\eigen-eigen-2e4aedfc8e06\build\doc\snippets\compile_MatrixBase_asDiagonal.vcxproj">
+      <Project>{64588925-3977-302A-81D8-6DE961EB6A9F}</Project>
+      <Name>compile_MatrixBase_asDiagonal</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\eigen-eigen-2e4aedfc8e06\build\doc\snippets\compile_MatrixBase_block_int_int.vcxproj">
+      <Project>{C755C83A-ECF4-3A89-8A65-FBDF45545EC8}</Project>
+      <Name>compile_MatrixBase_block_int_int</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\eigen-eigen-2e4aedfc8e06\build\doc\snippets\compile_MatrixBase_block_int_int_int_int.vcxproj">
+      <Project>{B32A7535-54F3-3CDF-AAEB-234C4BFEA0D7}</Project>
+      <Name>compile_MatrixBase_block_int_int_int_int</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\eigen-eigen-2e4aedfc8e06\build\doc\snippets\compile_MatrixBase_bottomLeftCorner_int_int.vcxproj">
+      <Project>{C1BF4F94-E2DA-39CE-96D2-8251C89F0F5E}</Project>
+      <Name>compile_MatrixBase_bottomLeftCorner_int_int</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\eigen-eigen-2e4aedfc8e06\build\doc\snippets\compile_MatrixBase_bottomRightCorner_int_int.vcxproj">
+      <Project>{BA2922B9-571D-37F5-8591-4D0158096F7D}</Project>
+      <Name>compile_MatrixBase_bottomRightCorner_int_int</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\eigen-eigen-2e4aedfc8e06\build\doc\snippets\compile_MatrixBase_bottomRows_int.vcxproj">
+      <Project>{E28A8616-B9B4-3DD2-AD83-EA873F12223C}</Project>
+      <Name>compile_MatrixBase_bottomRows_int</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\eigen-eigen-2e4aedfc8e06\build\doc\snippets\compile_MatrixBase_cast.vcxproj">
+      <Project>{49830DDB-3601-3498-8C75-05D192F5D01A}</Project>
+      <Name>compile_MatrixBase_cast</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\eigen-eigen-2e4aedfc8e06\build\doc\snippets\compile_MatrixBase_col.vcxproj">
+      <Project>{A5CE1BEC-6F77-3D3E-B7C3-52D6DA893107}</Project>
+      <Name>compile_MatrixBase_col</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\eigen-eigen-2e4aedfc8e06\build\doc\snippets\compile_MatrixBase_colwise.vcxproj">
+      <Project>{B80223CC-B793-3FEE-A59A-C417D8CBCC82}</Project>
+      <Name>compile_MatrixBase_colwise</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\eigen-eigen-2e4aedfc8e06\build\doc\snippets\compile_MatrixBase_colwise_iterator_cxx11.vcxproj">
+      <Project>{1072A016-7602-3226-9792-F0C1D5BCB136}</Project>
+      <Name>compile_MatrixBase_colwise_iterator_cxx11</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\eigen-eigen-2e4aedfc8e06\build\doc\snippets\compile_MatrixBase_computeInverseAndDetWithCheck.vcxproj">
+      <Project>{85392316-D851-3D80-94BB-5C2E8E88B083}</Project>
+      <Name>compile_MatrixBase_computeInverseAndDetWithCheck</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\eigen-eigen-2e4aedfc8e06\build\doc\snippets\compile_MatrixBase_computeInverseWithCheck.vcxproj">
+      <Project>{8BF60C07-81E0-3A7A-A6E4-31AAB6B36588}</Project>
+      <Name>compile_MatrixBase_computeInverseWithCheck</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\eigen-eigen-2e4aedfc8e06\build\doc\snippets\compile_MatrixBase_cwiseAbs.vcxproj">
+      <Project>{2A610A00-707D-38C6-A086-C7E002BDCEEA}</Project>
+      <Name>compile_MatrixBase_cwiseAbs</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\eigen-eigen-2e4aedfc8e06\build\doc\snippets\compile_MatrixBase_cwiseAbs2.vcxproj">
+      <Project>{5C4C60D9-3C01-35E1-92E2-075B30F763CE}</Project>
+      <Name>compile_MatrixBase_cwiseAbs2</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\eigen-eigen-2e4aedfc8e06\build\doc\snippets\compile_MatrixBase_cwiseEqual.vcxproj">
+      <Project>{37807AC6-B397-3C3F-8444-5174BE79FBC5}</Project>
+      <Name>compile_MatrixBase_cwiseEqual</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\eigen-eigen-2e4aedfc8e06\build\doc\snippets\compile_MatrixBase_cwiseInverse.vcxproj">
+      <Project>{98332E8D-CD10-3B3B-9DAE-DB417C173E61}</Project>
+      <Name>compile_MatrixBase_cwiseInverse</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\eigen-eigen-2e4aedfc8e06\build\doc\snippets\compile_MatrixBase_cwiseMax.vcxproj">
+      <Project>{8D04B620-965D-3B61-981A-47C991C2439E}</Project>
+      <Name>compile_MatrixBase_cwiseMax</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\eigen-eigen-2e4aedfc8e06\build\doc\snippets\compile_MatrixBase_cwiseMin.vcxproj">
+      <Project>{723DD48F-79BB-3DF9-9000-7B5A491E63F9}</Project>
+      <Name>compile_MatrixBase_cwiseMin</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\eigen-eigen-2e4aedfc8e06\build\doc\snippets\compile_MatrixBase_cwiseNotEqual.vcxproj">
+      <Project>{2B0C2DE0-8821-3DF0-92CF-53D258161268}</Project>
+      <Name>compile_MatrixBase_cwiseNotEqual</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\eigen-eigen-2e4aedfc8e06\build\doc\snippets\compile_MatrixBase_cwiseProduct.vcxproj">
+      <Project>{BE683F05-4836-37C6-B914-B82E0CDE7D95}</Project>
+      <Name>compile_MatrixBase_cwiseProduct</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\eigen-eigen-2e4aedfc8e06\build\doc\snippets\compile_MatrixBase_cwiseQuotient.vcxproj">
+      <Project>{B207CBB1-25E1-3F18-8D8E-18F4EEDE5F15}</Project>
+      <Name>compile_MatrixBase_cwiseQuotient</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\eigen-eigen-2e4aedfc8e06\build\doc\snippets\compile_MatrixBase_cwiseSign.vcxproj">
+      <Project>{80619DB9-BE46-3363-A0FC-CCDB06E01484}</Project>
+      <Name>compile_MatrixBase_cwiseSign</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\eigen-eigen-2e4aedfc8e06\build\doc\snippets\compile_MatrixBase_cwiseSqrt.vcxproj">
+      <Project>{22D747DB-4E7A-36D6-BB65-BA40FEFECF6F}</Project>
+      <Name>compile_MatrixBase_cwiseSqrt</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\eigen-eigen-2e4aedfc8e06\build\doc\snippets\compile_MatrixBase_diagonal.vcxproj">
+      <Project>{8D546324-E20E-3FFA-9A92-765447413D51}</Project>
+      <Name>compile_MatrixBase_diagonal</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\eigen-eigen-2e4aedfc8e06\build\doc\snippets\compile_MatrixBase_diagonal_int.vcxproj">
+      <Project>{5E12C6BE-1F5F-3503-B336-C8FE92169E0B}</Project>
+      <Name>compile_MatrixBase_diagonal_int</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\eigen-eigen-2e4aedfc8e06\build\doc\snippets\compile_MatrixBase_diagonal_template_int.vcxproj">
+      <Project>{91190C5C-1185-3212-A2C5-735B321AAF64}</Project>
+      <Name>compile_MatrixBase_diagonal_template_int</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\eigen-eigen-2e4aedfc8e06\build\doc\snippets\compile_MatrixBase_eigenvalues.vcxproj">
+      <Project>{CF00EC3D-713A-3960-94B2-339D5E74AA72}</Project>
+      <Name>compile_MatrixBase_eigenvalues</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\eigen-eigen-2e4aedfc8e06\build\doc\snippets\compile_MatrixBase_end_int.vcxproj">
+      <Project>{E78F86CA-BD95-32BA-AF30-EB61589FEFBC}</Project>
+      <Name>compile_MatrixBase_end_int</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\eigen-eigen-2e4aedfc8e06\build\doc\snippets\compile_MatrixBase_eval.vcxproj">
+      <Project>{55C017EF-688D-3879-B391-90D6994A3A19}</Project>
+      <Name>compile_MatrixBase_eval</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\eigen-eigen-2e4aedfc8e06\build\doc\snippets\compile_MatrixBase_fixedBlock_int_int.vcxproj">
+      <Project>{78103C69-11F5-3CBC-AFFF-D7EA2DE758FD}</Project>
+      <Name>compile_MatrixBase_fixedBlock_int_int</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\eigen-eigen-2e4aedfc8e06\build\doc\snippets\compile_MatrixBase_hnormalized.vcxproj">
+      <Project>{9E43485C-EBA8-3F41-8599-D2C5E49F4098}</Project>
+      <Name>compile_MatrixBase_hnormalized</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\eigen-eigen-2e4aedfc8e06\build\doc\snippets\compile_MatrixBase_homogeneous.vcxproj">
+      <Project>{7E0DF345-A456-3B76-BCCD-288AE1C86F42}</Project>
+      <Name>compile_MatrixBase_homogeneous</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\eigen-eigen-2e4aedfc8e06\build\doc\snippets\compile_MatrixBase_identity.vcxproj">
+      <Project>{1857B40D-4C89-3B13-ABC5-82F043AC4383}</Project>
+      <Name>compile_MatrixBase_identity</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\eigen-eigen-2e4aedfc8e06\build\doc\snippets\compile_MatrixBase_identity_int_int.vcxproj">
+      <Project>{6F7E0EF5-76D5-3427-BC51-E381BC73195E}</Project>
+      <Name>compile_MatrixBase_identity_int_int</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\eigen-eigen-2e4aedfc8e06\build\doc\snippets\compile_MatrixBase_inverse.vcxproj">
+      <Project>{1C1BAAB1-D9D0-38BF-AB19-475351E44115}</Project>
+      <Name>compile_MatrixBase_inverse</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\eigen-eigen-2e4aedfc8e06\build\doc\snippets\compile_MatrixBase_isDiagonal.vcxproj">
+      <Project>{810110FB-522F-3877-8AD8-3195180900E1}</Project>
+      <Name>compile_MatrixBase_isDiagonal</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\eigen-eigen-2e4aedfc8e06\build\doc\snippets\compile_MatrixBase_isIdentity.vcxproj">
+      <Project>{25381D00-4A34-3097-98C1-597330B6FBCB}</Project>
+      <Name>compile_MatrixBase_isIdentity</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\eigen-eigen-2e4aedfc8e06\build\doc\snippets\compile_MatrixBase_isOnes.vcxproj">
+      <Project>{A2F849E1-4C3F-30AB-8E89-37EF0625C89A}</Project>
+      <Name>compile_MatrixBase_isOnes</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\eigen-eigen-2e4aedfc8e06\build\doc\snippets\compile_MatrixBase_isOrthogonal.vcxproj">
+      <Project>{E8F70258-5FDA-3387-B690-8838B1325579}</Project>
+      <Name>compile_MatrixBase_isOrthogonal</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\eigen-eigen-2e4aedfc8e06\build\doc\snippets\compile_MatrixBase_isUnitary.vcxproj">
+      <Project>{AA8A07A0-495B-3DCC-9E9E-C99BB37B3895}</Project>
+      <Name>compile_MatrixBase_isUnitary</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\eigen-eigen-2e4aedfc8e06\build\doc\snippets\compile_MatrixBase_isZero.vcxproj">
+      <Project>{FFEBA580-D75D-3FE4-B064-89EC9E193C7D}</Project>
+      <Name>compile_MatrixBase_isZero</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\eigen-eigen-2e4aedfc8e06\build\doc\snippets\compile_MatrixBase_leftCols_int.vcxproj">
+      <Project>{74AC5A1B-228F-3E06-A40A-BB8DDC72A6AF}</Project>
+      <Name>compile_MatrixBase_leftCols_int</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\eigen-eigen-2e4aedfc8e06\build\doc\snippets\compile_MatrixBase_noalias.vcxproj">
+      <Project>{D033CBF2-A716-391C-A671-E2D0140F34A0}</Project>
+      <Name>compile_MatrixBase_noalias</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\eigen-eigen-2e4aedfc8e06\build\doc\snippets\compile_MatrixBase_ones.vcxproj">
+      <Project>{2EBA1A11-220E-337B-BE74-EB619C55AE99}</Project>
+      <Name>compile_MatrixBase_ones</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\eigen-eigen-2e4aedfc8e06\build\doc\snippets\compile_MatrixBase_ones_int.vcxproj">
+      <Project>{5A2F39D1-6C91-34F4-965A-F9B9B3C289EF}</Project>
+      <Name>compile_MatrixBase_ones_int</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\eigen-eigen-2e4aedfc8e06\build\doc\snippets\compile_MatrixBase_ones_int_int.vcxproj">
+      <Project>{70589789-57C2-3B9B-9291-B2F77041F1A7}</Project>
+      <Name>compile_MatrixBase_ones_int_int</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\eigen-eigen-2e4aedfc8e06\build\doc\snippets\compile_MatrixBase_operatorNorm.vcxproj">
+      <Project>{328C699E-1111-3A0E-9E92-275B05A29633}</Project>
+      <Name>compile_MatrixBase_operatorNorm</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\eigen-eigen-2e4aedfc8e06\build\doc\snippets\compile_MatrixBase_prod.vcxproj">
+      <Project>{FB4711A0-0488-3F83-A61B-9DF62B41982D}</Project>
+      <Name>compile_MatrixBase_prod</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\eigen-eigen-2e4aedfc8e06\build\doc\snippets\compile_MatrixBase_random.vcxproj">
+      <Project>{5E3E8525-8C06-3FC6-BBC0-A90687CE0187}</Project>
+      <Name>compile_MatrixBase_random</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\eigen-eigen-2e4aedfc8e06\build\doc\snippets\compile_MatrixBase_random_int.vcxproj">
+      <Project>{AA51CAA4-51C5-38C5-8A2C-72B2EE8109E3}</Project>
+      <Name>compile_MatrixBase_random_int</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\eigen-eigen-2e4aedfc8e06\build\doc\snippets\compile_MatrixBase_random_int_int.vcxproj">
+      <Project>{4385A682-D62C-3D70-B41B-877174FAD2DB}</Project>
+      <Name>compile_MatrixBase_random_int_int</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\eigen-eigen-2e4aedfc8e06\build\doc\snippets\compile_MatrixBase_replicate.vcxproj">
+      <Project>{E5BD493A-BBE3-3547-87A5-D4F05ECADA79}</Project>
+      <Name>compile_MatrixBase_replicate</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\eigen-eigen-2e4aedfc8e06\build\doc\snippets\compile_MatrixBase_replicate_int_int.vcxproj">
+      <Project>{FD96DB33-2CFE-3A4E-9B8A-9C74AFED5F3E}</Project>
+      <Name>compile_MatrixBase_replicate_int_int</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\eigen-eigen-2e4aedfc8e06\build\doc\snippets\compile_MatrixBase_reshaped_auto.vcxproj">
+      <Project>{278EEF30-1385-3A3F-986C-E7A1044458FB}</Project>
+      <Name>compile_MatrixBase_reshaped_auto</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\eigen-eigen-2e4aedfc8e06\build\doc\snippets\compile_MatrixBase_reshaped_fixed.vcxproj">
+      <Project>{19837030-F9E7-35A8-90F2-B902F9DE35F8}</Project>
+      <Name>compile_MatrixBase_reshaped_fixed</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\eigen-eigen-2e4aedfc8e06\build\doc\snippets\compile_MatrixBase_reshaped_int_int.vcxproj">
+      <Project>{3422EC20-D14B-307B-ACBB-071FED969551}</Project>
+      <Name>compile_MatrixBase_reshaped_int_int</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\eigen-eigen-2e4aedfc8e06\build\doc\snippets\compile_MatrixBase_reshaped_to_vector.vcxproj">
+      <Project>{59DB16A8-C176-3C0C-AF0D-AD45C22DB640}</Project>
+      <Name>compile_MatrixBase_reshaped_to_vector</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\eigen-eigen-2e4aedfc8e06\build\doc\snippets\compile_MatrixBase_reverse.vcxproj">
+      <Project>{D67C942C-3E43-3B7B-8B41-F4063E370DDD}</Project>
+      <Name>compile_MatrixBase_reverse</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\eigen-eigen-2e4aedfc8e06\build\doc\snippets\compile_MatrixBase_rightCols_int.vcxproj">
+      <Project>{603E6604-9C95-346A-A034-3D24DF63A418}</Project>
+      <Name>compile_MatrixBase_rightCols_int</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\eigen-eigen-2e4aedfc8e06\build\doc\snippets\compile_MatrixBase_row.vcxproj">
+      <Project>{85E4AB44-7C00-3E4E-B81A-B5BC7DC22981}</Project>
+      <Name>compile_MatrixBase_row</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\eigen-eigen-2e4aedfc8e06\build\doc\snippets\compile_MatrixBase_rowwise.vcxproj">
+      <Project>{89C8E7E3-1DED-331C-B85D-9A2B8823B814}</Project>
+      <Name>compile_MatrixBase_rowwise</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\eigen-eigen-2e4aedfc8e06\build\doc\snippets\compile_MatrixBase_segment_int_int.vcxproj">
+      <Project>{33508500-3565-3BE7-8B3B-38643B831DA6}</Project>
+      <Name>compile_MatrixBase_segment_int_int</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\eigen-eigen-2e4aedfc8e06\build\doc\snippets\compile_MatrixBase_select.vcxproj">
+      <Project>{819309C5-B759-3207-A25F-C71734D612CD}</Project>
+      <Name>compile_MatrixBase_select</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\eigen-eigen-2e4aedfc8e06\build\doc\snippets\compile_MatrixBase_selfadjointView.vcxproj">
+      <Project>{A661E50B-5582-3375-9A3A-C4CB76EBFF7C}</Project>
+      <Name>compile_MatrixBase_selfadjointView</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\eigen-eigen-2e4aedfc8e06\build\doc\snippets\compile_MatrixBase_set.vcxproj">
+      <Project>{FD4E5054-454B-3059-89A5-C4CC6D7BE628}</Project>
+      <Name>compile_MatrixBase_set</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\eigen-eigen-2e4aedfc8e06\build\doc\snippets\compile_MatrixBase_setIdentity.vcxproj">
+      <Project>{EEA10AC1-79B0-3B84-8E19-73BB2E77AEF1}</Project>
+      <Name>compile_MatrixBase_setIdentity</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\eigen-eigen-2e4aedfc8e06\build\doc\snippets\compile_MatrixBase_setOnes.vcxproj">
+      <Project>{E9FAEBE5-473B-39A6-AFB9-895EBE7A235A}</Project>
+      <Name>compile_MatrixBase_setOnes</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\eigen-eigen-2e4aedfc8e06\build\doc\snippets\compile_MatrixBase_setRandom.vcxproj">
+      <Project>{63AAB4E5-E452-3E9D-AE38-35D1325F7358}</Project>
+      <Name>compile_MatrixBase_setRandom</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\eigen-eigen-2e4aedfc8e06\build\doc\snippets\compile_MatrixBase_setZero.vcxproj">
+      <Project>{FD511038-56FB-3516-AD4E-2095E9FB9F99}</Project>
+      <Name>compile_MatrixBase_setZero</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\eigen-eigen-2e4aedfc8e06\build\doc\snippets\compile_MatrixBase_start_int.vcxproj">
+      <Project>{14425673-53B4-3CE8-ABAC-5A937A19BBBA}</Project>
+      <Name>compile_MatrixBase_start_int</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\eigen-eigen-2e4aedfc8e06\build\doc\snippets\compile_MatrixBase_template_int_bottomRows.vcxproj">
+      <Project>{81977158-A97A-3EF2-9437-C8DE689F8471}</Project>
+      <Name>compile_MatrixBase_template_int_bottomRows</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\eigen-eigen-2e4aedfc8e06\build\doc\snippets\compile_MatrixBase_template_int_end.vcxproj">
+      <Project>{C4225EBF-7E13-3456-BCB6-9457C9BEA4AF}</Project>
+      <Name>compile_MatrixBase_template_int_end</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\eigen-eigen-2e4aedfc8e06\build\doc\snippets\compile_MatrixBase_template_int_int_block_int_int_int_int.vcxproj">
+      <Project>{DF89B6AD-3095-3338-9BBB-B3596CE828BA}</Project>
+      <Name>compile_MatrixBase_template_int_int_block_int_int_int_int</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\eigen-eigen-2e4aedfc8e06\build\doc\snippets\compile_MatrixBase_template_int_int_bottomLeftCorner.vcxproj">
+      <Project>{C7ABE9A6-0D01-33DA-8551-4B030C65ECCB}</Project>
+      <Name>compile_MatrixBase_template_int_int_bottomLeftCorner</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\eigen-eigen-2e4aedfc8e06\build\doc\snippets\compile_MatrixBase_template_int_int_bottomLeftCorner_int_int.vcxproj">
+      <Project>{AB6F81A5-A932-3A04-A7AC-0B1D12984D8C}</Project>
+      <Name>compile_MatrixBase_template_int_int_bottomLeftCorner_int_int</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\eigen-eigen-2e4aedfc8e06\build\doc\snippets\compile_MatrixBase_template_int_int_bottomRightCorner.vcxproj">
+      <Project>{7293F4AC-CA9C-34CC-A26B-17E127AA1192}</Project>
+      <Name>compile_MatrixBase_template_int_int_bottomRightCorner</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\eigen-eigen-2e4aedfc8e06\build\doc\snippets\compile_MatrixBase_template_int_int_bottomRightCorner_int_int.vcxproj">
+      <Project>{94124CF3-598E-38B8-ACFA-E55FDEF75A8E}</Project>
+      <Name>compile_MatrixBase_template_int_int_bottomRightCorner_int_int</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\eigen-eigen-2e4aedfc8e06\build\doc\snippets\compile_MatrixBase_template_int_int_topLeftCorner.vcxproj">
+      <Project>{3647A80C-65FE-3FE2-B33D-03AF949A8CE3}</Project>
+      <Name>compile_MatrixBase_template_int_int_topLeftCorner</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\eigen-eigen-2e4aedfc8e06\build\doc\snippets\compile_MatrixBase_template_int_int_topLeftCorner_int_int.vcxproj">
+      <Project>{55B6829E-A6C3-32F9-9CAB-347B83366388}</Project>
+      <Name>compile_MatrixBase_template_int_int_topLeftCorner_int_int</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\eigen-eigen-2e4aedfc8e06\build\doc\snippets\compile_MatrixBase_template_int_int_topRightCorner.vcxproj">
+      <Project>{3B8426E0-B278-385F-9047-4EB5C0EB8446}</Project>
+      <Name>compile_MatrixBase_template_int_int_topRightCorner</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\eigen-eigen-2e4aedfc8e06\build\doc\snippets\compile_MatrixBase_template_int_int_topRightCorner_int_int.vcxproj">
+      <Project>{7077DCC0-EFAE-34B5-A17F-1ABA68D7DBAC}</Project>
+      <Name>compile_MatrixBase_template_int_int_topRightCorner_int_int</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\eigen-eigen-2e4aedfc8e06\build\doc\snippets\compile_MatrixBase_template_int_leftCols.vcxproj">
+      <Project>{BD3FC43F-A1F7-3BF2-8D0A-E47D4BC50A74}</Project>
+      <Name>compile_MatrixBase_template_int_leftCols</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\eigen-eigen-2e4aedfc8e06\build\doc\snippets\compile_MatrixBase_template_int_rightCols.vcxproj">
+      <Project>{51A05E24-5E1A-3BD9-80CD-33929A778B1A}</Project>
+      <Name>compile_MatrixBase_template_int_rightCols</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\eigen-eigen-2e4aedfc8e06\build\doc\snippets\compile_MatrixBase_template_int_segment.vcxproj">
+      <Project>{D941E193-6E65-3DCA-A40B-E9BAFF516393}</Project>
+      <Name>compile_MatrixBase_template_int_segment</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\eigen-eigen-2e4aedfc8e06\build\doc\snippets\compile_MatrixBase_template_int_start.vcxproj">
+      <Project>{483A347F-D378-3B83-AD5A-1C32B3C5032D}</Project>
+      <Name>compile_MatrixBase_template_int_start</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\eigen-eigen-2e4aedfc8e06\build\doc\snippets\compile_MatrixBase_template_int_topRows.vcxproj">
+      <Project>{94B81E68-78CD-3154-B483-5B2D6F5B2057}</Project>
+      <Name>compile_MatrixBase_template_int_topRows</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\eigen-eigen-2e4aedfc8e06\build\doc\snippets\compile_MatrixBase_topLeftCorner_int_int.vcxproj">
+      <Project>{813D5F08-9B53-3CCA-919C-646EA5D01F97}</Project>
+      <Name>compile_MatrixBase_topLeftCorner_int_int</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\eigen-eigen-2e4aedfc8e06\build\doc\snippets\compile_MatrixBase_topRightCorner_int_int.vcxproj">
+      <Project>{4DAAF3DE-3C24-32A9-9E33-C85593C48D62}</Project>
+      <Name>compile_MatrixBase_topRightCorner_int_int</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\eigen-eigen-2e4aedfc8e06\build\doc\snippets\compile_MatrixBase_topRows_int.vcxproj">
+      <Project>{E71B8B36-99E8-37B5-8788-BBA70A2BFF94}</Project>
+      <Name>compile_MatrixBase_topRows_int</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\eigen-eigen-2e4aedfc8e06\build\doc\snippets\compile_MatrixBase_transpose.vcxproj">
+      <Project>{6D9EF4CF-E526-3ACC-A214-E41A123A9FDF}</Project>
+      <Name>compile_MatrixBase_transpose</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\eigen-eigen-2e4aedfc8e06\build\doc\snippets\compile_MatrixBase_triangularView.vcxproj">
+      <Project>{E19788B8-3184-367E-8143-CACF54F120ED}</Project>
+      <Name>compile_MatrixBase_triangularView</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\eigen-eigen-2e4aedfc8e06\build\doc\snippets\compile_MatrixBase_zero.vcxproj">
+      <Project>{D81E636B-46BC-3147-A166-BB963A2E81EC}</Project>
+      <Name>compile_MatrixBase_zero</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\eigen-eigen-2e4aedfc8e06\build\doc\snippets\compile_MatrixBase_zero_int.vcxproj">
+      <Project>{1657B1B7-6C0F-3A77-9AE0-50F1626EF72E}</Project>
+      <Name>compile_MatrixBase_zero_int</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\eigen-eigen-2e4aedfc8e06\build\doc\snippets\compile_MatrixBase_zero_int_int.vcxproj">
+      <Project>{D0B5E34F-DD95-30D7-AB96-987F153F5906}</Project>
+      <Name>compile_MatrixBase_zero_int_int</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\eigen-eigen-2e4aedfc8e06\build\doc\snippets\compile_Matrix_Map_stride.vcxproj">
+      <Project>{66AA9350-27CC-336F-9421-EA901DD92892}</Project>
+      <Name>compile_Matrix_Map_stride</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\eigen-eigen-2e4aedfc8e06\build\doc\snippets\compile_Matrix_resize_NoChange_int.vcxproj">
+      <Project>{B62CBC55-1D06-3640-9627-F1C5B59B9624}</Project>
+      <Name>compile_Matrix_resize_NoChange_int</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\eigen-eigen-2e4aedfc8e06\build\doc\snippets\compile_Matrix_resize_int.vcxproj">
+      <Project>{24AF096A-0016-3CA7-8749-10DE04F75354}</Project>
+      <Name>compile_Matrix_resize_int</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\eigen-eigen-2e4aedfc8e06\build\doc\snippets\compile_Matrix_resize_int_NoChange.vcxproj">
+      <Project>{9C6E8D0D-D1EA-3B11-ABFC-BF99E100F58C}</Project>
+      <Name>compile_Matrix_resize_int_NoChange</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\eigen-eigen-2e4aedfc8e06\build\doc\snippets\compile_Matrix_resize_int_int.vcxproj">
+      <Project>{EA87858A-3340-3BFE-9873-7E552BD26083}</Project>
+      <Name>compile_Matrix_resize_int_int</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\eigen-eigen-2e4aedfc8e06\build\doc\snippets\compile_Matrix_setConstant_int.vcxproj">
+      <Project>{D8F8CC19-E64A-3236-A5EE-B085C766EDD0}</Project>
+      <Name>compile_Matrix_setConstant_int</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\eigen-eigen-2e4aedfc8e06\build\doc\snippets\compile_Matrix_setConstant_int_int.vcxproj">
+      <Project>{25538FDA-11D1-3FF0-BABB-372EDEC45C67}</Project>
+      <Name>compile_Matrix_setConstant_int_int</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\eigen-eigen-2e4aedfc8e06\build\doc\snippets\compile_Matrix_setIdentity_int_int.vcxproj">
+      <Project>{CDD95735-C463-365D-8499-F2F8520DEC1E}</Project>
+      <Name>compile_Matrix_setIdentity_int_int</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\eigen-eigen-2e4aedfc8e06\build\doc\snippets\compile_Matrix_setOnes_int.vcxproj">
+      <Project>{F3125752-77C7-3E7C-BD9F-9550CDC8E395}</Project>
+      <Name>compile_Matrix_setOnes_int</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\eigen-eigen-2e4aedfc8e06\build\doc\snippets\compile_Matrix_setOnes_int_int.vcxproj">
+      <Project>{B71DC1F9-FBAF-3CF2-9F4F-630C3C92CC41}</Project>
+      <Name>compile_Matrix_setOnes_int_int</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\eigen-eigen-2e4aedfc8e06\build\doc\snippets\compile_Matrix_setRandom_int.vcxproj">
+      <Project>{97BE2C1A-78AC-3B94-BDC4-4B61C1253C7B}</Project>
+      <Name>compile_Matrix_setRandom_int</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\eigen-eigen-2e4aedfc8e06\build\doc\snippets\compile_Matrix_setRandom_int_int.vcxproj">
+      <Project>{FB4929BC-2CDA-36FA-94F4-FAE0410E7470}</Project>
+      <Name>compile_Matrix_setRandom_int_int</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\eigen-eigen-2e4aedfc8e06\build\doc\snippets\compile_Matrix_setZero_int.vcxproj">
+      <Project>{A3298E8B-BCC9-3B53-89B6-47A253F2EB69}</Project>
+      <Name>compile_Matrix_setZero_int</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\eigen-eigen-2e4aedfc8e06\build\doc\snippets\compile_Matrix_setZero_int_int.vcxproj">
+      <Project>{2BCD2E11-4F6E-3E80-B84F-336822373DE9}</Project>
+      <Name>compile_Matrix_setZero_int_int</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\eigen-eigen-2e4aedfc8e06\build\doc\snippets\compile_PartialPivLU_solve.vcxproj">
+      <Project>{A6F1C641-05CD-348F-9CA9-C66122531770}</Project>
+      <Name>compile_PartialPivLU_solve</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\eigen-eigen-2e4aedfc8e06\build\doc\snippets\compile_PartialRedux_count.vcxproj">
+      <Project>{8B53920D-0A14-35D0-98E4-D42F7E40818A}</Project>
+      <Name>compile_PartialRedux_count</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\eigen-eigen-2e4aedfc8e06\build\doc\snippets\compile_PartialRedux_maxCoeff.vcxproj">
+      <Project>{FBE1F7B2-E282-3003-86DC-FDADFD6CD42E}</Project>
+      <Name>compile_PartialRedux_maxCoeff</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\eigen-eigen-2e4aedfc8e06\build\doc\snippets\compile_PartialRedux_minCoeff.vcxproj">
+      <Project>{FB4ACB9A-F604-3C1B-BD22-22997FAE919B}</Project>
+      <Name>compile_PartialRedux_minCoeff</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\eigen-eigen-2e4aedfc8e06\build\doc\snippets\compile_PartialRedux_norm.vcxproj">
+      <Project>{B9B94D9F-2352-3FF4-98DB-D015532CA1F6}</Project>
+      <Name>compile_PartialRedux_norm</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\eigen-eigen-2e4aedfc8e06\build\doc\snippets\compile_PartialRedux_prod.vcxproj">
+      <Project>{1A2A498E-D78B-3028-86EA-37BF96270D74}</Project>
+      <Name>compile_PartialRedux_prod</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\eigen-eigen-2e4aedfc8e06\build\doc\snippets\compile_PartialRedux_squaredNorm.vcxproj">
+      <Project>{3A7AB019-FE54-33A0-94D7-75DE5E659BD5}</Project>
+      <Name>compile_PartialRedux_squaredNorm</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\eigen-eigen-2e4aedfc8e06\build\doc\snippets\compile_PartialRedux_sum.vcxproj">
+      <Project>{FA8402C3-B7D1-3B53-83FF-A854DFF31DFD}</Project>
+      <Name>compile_PartialRedux_sum</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\eigen-eigen-2e4aedfc8e06\build\doc\snippets\compile_RealQZ_compute.vcxproj">
+      <Project>{93193C4A-4483-3DA1-B597-0FC36F8DDAD9}</Project>
+      <Name>compile_RealQZ_compute</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\eigen-eigen-2e4aedfc8e06\build\doc\snippets\compile_RealSchur_RealSchur_MatrixType.vcxproj">
+      <Project>{39450AB5-B705-3416-BE60-AB42C5BF0628}</Project>
+      <Name>compile_RealSchur_RealSchur_MatrixType</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\eigen-eigen-2e4aedfc8e06\build\doc\snippets\compile_RealSchur_compute.vcxproj">
+      <Project>{40ABEB4A-D66A-3162-83B4-C2B480AC62FE}</Project>
+      <Name>compile_RealSchur_compute</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\eigen-eigen-2e4aedfc8e06\build\doc\snippets\compile_SelfAdjointEigenSolver_SelfAdjointEigenSolver.vcxproj">
+      <Project>{EE971FDE-DEFF-3D35-BEFD-BE5E9B9AE5BD}</Project>
+      <Name>compile_SelfAdjointEigenSolver_SelfAdjointEigenSolver</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\eigen-eigen-2e4aedfc8e06\build\doc\snippets\compile_SelfAdjointEigenSolver_SelfAdjointEigenSolver_MatrixType.vcxproj">
+      <Project>{66B0CD3E-466D-3021-8491-CC24B77B73E2}</Project>
+      <Name>compile_SelfAdjointEigenSolver_SelfAdjointEigenSolver_MatrixType</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\eigen-eigen-2e4aedfc8e06\build\doc\snippets\compile_SelfAdjointEigenSolver_SelfAdjointEigenSolver_MatrixType2.vcxproj">
+      <Project>{5085DE3F-66F7-36B9-A680-B9E33C97E2DA}</Project>
+      <Name>compile_SelfAdjointEigenSolver_SelfAdjointEigenSolver_MatrixType2</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\eigen-eigen-2e4aedfc8e06\build\doc\snippets\compile_SelfAdjointEigenSolver_compute_MatrixType.vcxproj">
+      <Project>{2D15ED2A-BB12-325D-838C-CFA344D61834}</Project>
+      <Name>compile_SelfAdjointEigenSolver_compute_MatrixType</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\eigen-eigen-2e4aedfc8e06\build\doc\snippets\compile_SelfAdjointEigenSolver_compute_MatrixType2.vcxproj">
+      <Project>{938F5A16-2AC5-3F8B-9FD2-022BA31489F4}</Project>
+      <Name>compile_SelfAdjointEigenSolver_compute_MatrixType2</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\eigen-eigen-2e4aedfc8e06\build\doc\snippets\compile_SelfAdjointEigenSolver_eigenvalues.vcxproj">
+      <Project>{17E8DFC5-EEC5-3ACE-A07D-E99ABDFB9ED6}</Project>
+      <Name>compile_SelfAdjointEigenSolver_eigenvalues</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\eigen-eigen-2e4aedfc8e06\build\doc\snippets\compile_SelfAdjointEigenSolver_eigenvectors.vcxproj">
+      <Project>{44D22E5A-9E0E-3631-ACA4-4BB04FE36890}</Project>
+      <Name>compile_SelfAdjointEigenSolver_eigenvectors</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\eigen-eigen-2e4aedfc8e06\build\doc\snippets\compile_SelfAdjointEigenSolver_operatorInverseSqrt.vcxproj">
+      <Project>{5FF6249F-9224-3871-96C5-A79CBC3D1697}</Project>
+      <Name>compile_SelfAdjointEigenSolver_operatorInverseSqrt</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\eigen-eigen-2e4aedfc8e06\build\doc\snippets\compile_SelfAdjointEigenSolver_operatorSqrt.vcxproj">
+      <Project>{5F2340A8-A35D-33E6-A574-B0FD41792B9E}</Project>
+      <Name>compile_SelfAdjointEigenSolver_operatorSqrt</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\eigen-eigen-2e4aedfc8e06\build\doc\snippets\compile_SelfAdjointView_eigenvalues.vcxproj">
+      <Project>{FB355012-1E95-3610-827F-CBE5DB7C1C3F}</Project>
+      <Name>compile_SelfAdjointView_eigenvalues</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\eigen-eigen-2e4aedfc8e06\build\doc\snippets\compile_SelfAdjointView_operatorNorm.vcxproj">
+      <Project>{451E07A7-D9D1-3C5C-8E76-EE58FDFC9D15}</Project>
+      <Name>compile_SelfAdjointView_operatorNorm</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\eigen-eigen-2e4aedfc8e06\build\doc\snippets\compile_Slicing_arrayexpr.vcxproj">
+      <Project>{A6BD19B0-AF5E-3AA4-A8C1-EDDA10A106EF}</Project>
+      <Name>compile_Slicing_arrayexpr</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\eigen-eigen-2e4aedfc8e06\build\doc\snippets\compile_Slicing_custom_padding_cxx11.vcxproj">
+      <Project>{F6D8D5F2-A109-356E-BDB8-7C1E459529CF}</Project>
+      <Name>compile_Slicing_custom_padding_cxx11</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\eigen-eigen-2e4aedfc8e06\build\doc\snippets\compile_Slicing_rawarray_cxx11.vcxproj">
+      <Project>{A257AF53-60F7-30BC-A67F-87FCE2D9AFAF}</Project>
+      <Name>compile_Slicing_rawarray_cxx11</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\eigen-eigen-2e4aedfc8e06\build\doc\snippets\compile_Slicing_stdvector_cxx11.vcxproj">
+      <Project>{9156A08E-1727-3A00-97AA-3159752B0E45}</Project>
+      <Name>compile_Slicing_stdvector_cxx11</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\eigen-eigen-2e4aedfc8e06\build\doc\snippets\compile_SparseMatrix_coeffs.vcxproj">
+      <Project>{4C2D241A-582A-3D5F-9731-1F4450940113}</Project>
+      <Name>compile_SparseMatrix_coeffs</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\eigen-eigen-2e4aedfc8e06\build\doc\snippets\compile_TopicAliasing_block.vcxproj">
+      <Project>{0E69F0CF-64AD-39D5-921F-077781A7805E}</Project>
+      <Name>compile_TopicAliasing_block</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\eigen-eigen-2e4aedfc8e06\build\doc\snippets\compile_TopicAliasing_block_correct.vcxproj">
+      <Project>{073599FE-6847-3B8D-9166-7ACB299733EF}</Project>
+      <Name>compile_TopicAliasing_block_correct</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\eigen-eigen-2e4aedfc8e06\build\doc\snippets\compile_TopicAliasing_cwise.vcxproj">
+      <Project>{E2161E67-4172-333E-BE4C-48B78251118A}</Project>
+      <Name>compile_TopicAliasing_cwise</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\eigen-eigen-2e4aedfc8e06\build\doc\snippets\compile_TopicAliasing_mult1.vcxproj">
+      <Project>{537A00C1-3B41-3978-A105-C253213E8D65}</Project>
+      <Name>compile_TopicAliasing_mult1</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\eigen-eigen-2e4aedfc8e06\build\doc\snippets\compile_TopicAliasing_mult2.vcxproj">
+      <Project>{187D3DA2-645A-3D70-8D7A-90A0495F92A6}</Project>
+      <Name>compile_TopicAliasing_mult2</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\eigen-eigen-2e4aedfc8e06\build\doc\snippets\compile_TopicAliasing_mult3.vcxproj">
+      <Project>{D5BCCBC7-F22B-356E-895E-8E14B6BAF36A}</Project>
+      <Name>compile_TopicAliasing_mult3</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\eigen-eigen-2e4aedfc8e06\build\doc\snippets\compile_TopicAliasing_mult4.vcxproj">
+      <Project>{700EBEF7-08A0-3D4E-90E3-8CDE8F4F5EF1}</Project>
+      <Name>compile_TopicAliasing_mult4</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\eigen-eigen-2e4aedfc8e06\build\doc\snippets\compile_TopicAliasing_mult5.vcxproj">
+      <Project>{DA9E8A7F-467A-34C6-8B14-D9A454D9C0FD}</Project>
+      <Name>compile_TopicAliasing_mult5</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\eigen-eigen-2e4aedfc8e06\build\doc\snippets\compile_TopicStorageOrders_example.vcxproj">
+      <Project>{F7EFB78E-CD8B-3287-8253-660A4B370616}</Project>
+      <Name>compile_TopicStorageOrders_example</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\eigen-eigen-2e4aedfc8e06\build\doc\snippets\compile_Triangular_solve.vcxproj">
+      <Project>{F3F390E4-E1FD-3D5B-AA1B-C9D97A65BE4C}</Project>
+      <Name>compile_Triangular_solve</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\eigen-eigen-2e4aedfc8e06\build\doc\snippets\compile_Tridiagonalization_Tridiagonalization_MatrixType.vcxproj">
+      <Project>{6D92B118-6604-313B-BFA2-07360FF61E50}</Project>
+      <Name>compile_Tridiagonalization_Tridiagonalization_MatrixType</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\eigen-eigen-2e4aedfc8e06\build\doc\snippets\compile_Tridiagonalization_compute.vcxproj">
+      <Project>{0A1D7171-74E7-3251-83A5-670A3750C121}</Project>
+      <Name>compile_Tridiagonalization_compute</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\eigen-eigen-2e4aedfc8e06\build\doc\snippets\compile_Tridiagonalization_decomposeInPlace.vcxproj">
+      <Project>{259167B8-D1DD-3DFD-83FF-AC7499604324}</Project>
+      <Name>compile_Tridiagonalization_decomposeInPlace</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\eigen-eigen-2e4aedfc8e06\build\doc\snippets\compile_Tridiagonalization_diagonal.vcxproj">
+      <Project>{16D87C71-6D00-3201-9F4D-D1760DBDC6B7}</Project>
+      <Name>compile_Tridiagonalization_diagonal</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\eigen-eigen-2e4aedfc8e06\build\doc\snippets\compile_Tridiagonalization_householderCoefficients.vcxproj">
+      <Project>{239C1863-408B-3718-AE52-597CD72BBDBE}</Project>
+      <Name>compile_Tridiagonalization_householderCoefficients</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\eigen-eigen-2e4aedfc8e06\build\doc\snippets\compile_Tridiagonalization_packedMatrix.vcxproj">
+      <Project>{64FBA5AA-F982-3555-B26F-53A178DA53A4}</Project>
+      <Name>compile_Tridiagonalization_packedMatrix</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\eigen-eigen-2e4aedfc8e06\build\doc\snippets\compile_Tutorial_AdvancedInitialization_Block.vcxproj">
+      <Project>{48E0A0E3-8ED4-3107-B28B-5F9336014591}</Project>
+      <Name>compile_Tutorial_AdvancedInitialization_Block</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\eigen-eigen-2e4aedfc8e06\build\doc\snippets\compile_Tutorial_AdvancedInitialization_CommaTemporary.vcxproj">
+      <Project>{1CC8062E-A69D-30B5-BB74-1237F44092F6}</Project>
+      <Name>compile_Tutorial_AdvancedInitialization_CommaTemporary</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\eigen-eigen-2e4aedfc8e06\build\doc\snippets\compile_Tutorial_AdvancedInitialization_Join.vcxproj">
+      <Project>{4B302F0E-BA56-3443-B0E2-3D3D5CB39F41}</Project>
+      <Name>compile_Tutorial_AdvancedInitialization_Join</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\eigen-eigen-2e4aedfc8e06\build\doc\snippets\compile_Tutorial_AdvancedInitialization_LinSpaced.vcxproj">
+      <Project>{4C18C502-217C-3AE1-8A46-B0B9CF24AA55}</Project>
+      <Name>compile_Tutorial_AdvancedInitialization_LinSpaced</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\eigen-eigen-2e4aedfc8e06\build\doc\snippets\compile_Tutorial_AdvancedInitialization_ThreeWays.vcxproj">
+      <Project>{F2C14975-F82E-37AA-BBFC-D736FD342DF5}</Project>
+      <Name>compile_Tutorial_AdvancedInitialization_ThreeWays</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\eigen-eigen-2e4aedfc8e06\build\doc\snippets\compile_Tutorial_AdvancedInitialization_Zero.vcxproj">
+      <Project>{5383B384-B8D4-3956-9C37-5528A5CD857C}</Project>
+      <Name>compile_Tutorial_AdvancedInitialization_Zero</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\eigen-eigen-2e4aedfc8e06\build\doc\snippets\compile_Tutorial_Map_rowmajor.vcxproj">
+      <Project>{33052ACB-F1F6-3445-B024-4197094D64B1}</Project>
+      <Name>compile_Tutorial_Map_rowmajor</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\eigen-eigen-2e4aedfc8e06\build\doc\snippets\compile_Tutorial_Map_using.vcxproj">
+      <Project>{0F03ADBB-5094-366C-9CE0-46AC8ECFD5CD}</Project>
+      <Name>compile_Tutorial_Map_using</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\eigen-eigen-2e4aedfc8e06\build\doc\snippets\compile_Tutorial_ReshapeMat2Mat.vcxproj">
+      <Project>{D0CB51A6-0A61-35AF-8EF3-85AE3238A636}</Project>
+      <Name>compile_Tutorial_ReshapeMat2Mat</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\eigen-eigen-2e4aedfc8e06\build\doc\snippets\compile_Tutorial_ReshapeMat2Vec.vcxproj">
+      <Project>{8BACA4D4-1E62-341C-8F79-D2B27F00E8F4}</Project>
+      <Name>compile_Tutorial_ReshapeMat2Vec</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\eigen-eigen-2e4aedfc8e06\build\doc\snippets\compile_Tutorial_SlicingCol.vcxproj">
+      <Project>{A7E18750-AE6E-3E67-96CA-719FE1414A5A}</Project>
+      <Name>compile_Tutorial_SlicingCol</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\eigen-eigen-2e4aedfc8e06\build\doc\snippets\compile_Tutorial_SlicingVec.vcxproj">
+      <Project>{4C27B1D1-5AFF-3493-912C-B66324CBD726}</Project>
+      <Name>compile_Tutorial_SlicingVec</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\eigen-eigen-2e4aedfc8e06\build\doc\snippets\compile_Tutorial_commainit_01.vcxproj">
+      <Project>{63D124A4-C3F1-3FBD-A265-6F4F46F0FC35}</Project>
+      <Name>compile_Tutorial_commainit_01</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\eigen-eigen-2e4aedfc8e06\build\doc\snippets\compile_Tutorial_commainit_01b.vcxproj">
+      <Project>{91E40634-1982-3A43-BA4F-83E49C3913D0}</Project>
+      <Name>compile_Tutorial_commainit_01b</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\eigen-eigen-2e4aedfc8e06\build\doc\snippets\compile_Tutorial_commainit_02.vcxproj">
+      <Project>{EF635EA0-58D0-3B4F-AD4D-540DE5FBF744}</Project>
+      <Name>compile_Tutorial_commainit_02</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\eigen-eigen-2e4aedfc8e06\build\doc\snippets\compile_Tutorial_range_for_loop_1d_cxx11.vcxproj">
+      <Project>{982C80F0-7970-3DBE-9F67-2449FF54C905}</Project>
+      <Name>compile_Tutorial_range_for_loop_1d_cxx11</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\eigen-eigen-2e4aedfc8e06\build\doc\snippets\compile_Tutorial_range_for_loop_2d_cxx11.vcxproj">
+      <Project>{BFD95607-A584-3AAA-853F-5050D745DC85}</Project>
+      <Name>compile_Tutorial_range_for_loop_2d_cxx11</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\eigen-eigen-2e4aedfc8e06\build\doc\snippets\compile_Tutorial_reshaped_vs_resize_1.vcxproj">
+      <Project>{3BBB8547-F1B5-34F2-A9B3-088353B5C44F}</Project>
+      <Name>compile_Tutorial_reshaped_vs_resize_1</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\eigen-eigen-2e4aedfc8e06\build\doc\snippets\compile_Tutorial_reshaped_vs_resize_2.vcxproj">
+      <Project>{8A29284E-D9F8-3A14-8623-C5E6AE18B965}</Project>
+      <Name>compile_Tutorial_reshaped_vs_resize_2</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\eigen-eigen-2e4aedfc8e06\build\doc\snippets\compile_Tutorial_solve_matrix_inverse.vcxproj">
+      <Project>{66FB552A-4D8D-3A45-9EE8-CAD32344491C}</Project>
+      <Name>compile_Tutorial_solve_matrix_inverse</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\eigen-eigen-2e4aedfc8e06\build\doc\snippets\compile_Tutorial_solve_multiple_rhs.vcxproj">
+      <Project>{1AA7BE22-57A2-30CE-81D6-FD4468AD283C}</Project>
+      <Name>compile_Tutorial_solve_multiple_rhs</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\eigen-eigen-2e4aedfc8e06\build\doc\snippets\compile_Tutorial_solve_reuse_decomposition.vcxproj">
+      <Project>{1EFF2D09-2374-3B2B-8CAE-D060EFF0BBE5}</Project>
+      <Name>compile_Tutorial_solve_reuse_decomposition</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\eigen-eigen-2e4aedfc8e06\build\doc\snippets\compile_Tutorial_solve_singular.vcxproj">
+      <Project>{74448056-DD4B-308B-AEAC-CFD599484FC1}</Project>
+      <Name>compile_Tutorial_solve_singular</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\eigen-eigen-2e4aedfc8e06\build\doc\snippets\compile_Tutorial_solve_triangular.vcxproj">
+      <Project>{916CAACE-D97C-31EA-A23F-FC069C3F96F3}</Project>
+      <Name>compile_Tutorial_solve_triangular</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\eigen-eigen-2e4aedfc8e06\build\doc\snippets\compile_Tutorial_solve_triangular_inplace.vcxproj">
+      <Project>{DB5E87A4-082D-3369-8686-AF43DB978EE6}</Project>
+      <Name>compile_Tutorial_solve_triangular_inplace</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\eigen-eigen-2e4aedfc8e06\build\doc\snippets\compile_Tutorial_std_sort.vcxproj">
+      <Project>{AF303A9E-CA4E-3EB0-95CB-432AAD37F16D}</Project>
+      <Name>compile_Tutorial_std_sort</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\eigen-eigen-2e4aedfc8e06\build\doc\snippets\compile_Tutorial_std_sort_rows.vcxproj">
+      <Project>{61E63F9D-7A36-3669-AA75-BCEF981A443E}</Project>
+      <Name>compile_Tutorial_std_sort_rows</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\eigen-eigen-2e4aedfc8e06\build\doc\snippets\compile_VectorwiseOp_homogeneous.vcxproj">
+      <Project>{C12AFF04-0EB3-3065-9759-A8C9B656AD24}</Project>
+      <Name>compile_VectorwiseOp_homogeneous</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\eigen-eigen-2e4aedfc8e06\build\doc\snippets\compile_Vectorwise_reverse.vcxproj">
+      <Project>{C1E99654-7446-36B6-BB75-902903C2F795}</Project>
+      <Name>compile_Vectorwise_reverse</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\eigen-eigen-2e4aedfc8e06\build\doc\snippets\compile_class_FullPivLU.vcxproj">
+      <Project>{3B37EE36-7BFE-3E26-B3E4-1DE4C64FD70E}</Project>
+      <Name>compile_class_FullPivLU</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\eigen-eigen-2e4aedfc8e06\build\doc\snippets\compile_tut_arithmetic_redux_minmax.vcxproj">
+      <Project>{07CFB35C-BB29-3075-9F56-49CFC4EA8A9A}</Project>
+      <Name>compile_tut_arithmetic_redux_minmax</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\eigen-eigen-2e4aedfc8e06\build\doc\snippets\compile_tut_arithmetic_transpose_aliasing.vcxproj">
+      <Project>{C71C9E39-448A-3C13-9A97-BF088900888E}</Project>
+      <Name>compile_tut_arithmetic_transpose_aliasing</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\eigen-eigen-2e4aedfc8e06\build\doc\snippets\compile_tut_arithmetic_transpose_conjugate.vcxproj">
+      <Project>{1FB16D1F-C901-3E03-9275-EA5725DF51F2}</Project>
+      <Name>compile_tut_arithmetic_transpose_conjugate</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\eigen-eigen-2e4aedfc8e06\build\doc\snippets\compile_tut_arithmetic_transpose_inplace.vcxproj">
+      <Project>{3087525D-2D75-30D6-AB3F-DB16117ADD65}</Project>
+      <Name>compile_tut_arithmetic_transpose_inplace</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\eigen-eigen-2e4aedfc8e06\build\doc\snippets\compile_tut_matrix_assignment_resizing.vcxproj">
+      <Project>{DB3F3D30-0643-333D-9D84-A30CD4225A72}</Project>
+      <Name>compile_tut_matrix_assignment_resizing</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\eigen-eigen-2e4aedfc8e06\build\doc\doc.vcxproj">
+      <Project>{AEE380E2-C119-35E3-BAFD-40232FCB54E9}</Project>
+      <Name>doc</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\eigen-eigen-2e4aedfc8e06\build\doc\doc-eigen-prerequisites.vcxproj">
+      <Project>{4BA19C80-4758-3B69-A347-A5FE5284A34E}</Project>
+      <Name>doc-eigen-prerequisites</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\eigen-eigen-2e4aedfc8e06\build\doc\doc-unsupported-prerequisites.vcxproj">
+      <Project>{19228B48-CD47-331B-B981-2A9708B7FA5D}</Project>
+      <Name>doc-unsupported-prerequisites</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\eigen-eigen-2e4aedfc8e06\build\doc\examples\function_taking_eigenbase.vcxproj">
+      <Project>{EC8F78BF-EAD9-3422-920F-D53FF46326D5}</Project>
+      <Name>function_taking_eigenbase</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\eigen-eigen-2e4aedfc8e06\build\doc\examples\function_taking_ref.vcxproj">
+      <Project>{DE7F2643-17E9-3270-B86B-668AAAFC7B1A}</Project>
+      <Name>function_taking_ref</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\eigen-eigen-2e4aedfc8e06\build\doc\examples\make_circulant.vcxproj">
+      <Project>{2A2D7C9A-7EE7-3F29-9ED9-3E7833319835}</Project>
+      <Name>make_circulant</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\eigen-eigen-2e4aedfc8e06\build\doc\examples\make_circulant2.vcxproj">
+      <Project>{238A8C8F-72FF-36CD-935F-950AD0138011}</Project>
+      <Name>make_circulant2</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\eigen-eigen-2e4aedfc8e06\build\doc\examples\matrixfree_cg.vcxproj">
+      <Project>{96EEA631-B93A-334D-B970-DA7760F4B030}</Project>
+      <Name>matrixfree_cg</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\eigen-eigen-2e4aedfc8e06\build\doc\examples\nullary_indexing.vcxproj">
+      <Project>{913F3189-5350-30B9-A3D4-EDB5C0908074}</Project>
+      <Name>nullary_indexing</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\eigen-eigen-2e4aedfc8e06\build\doc\special_examples\random_cpp11.vcxproj">
+      <Project>{B7E973FA-E013-3794-B461-305F4A2F6292}</Project>
+      <Name>random_cpp11</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\eigen-eigen-2e4aedfc8e06\build\doc\examples\tut_arithmetic_add_sub.vcxproj">
+      <Project>{D3103124-6107-3CEA-9EFB-D9B87CD6785E}</Project>
+      <Name>tut_arithmetic_add_sub</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\eigen-eigen-2e4aedfc8e06\build\doc\examples\tut_arithmetic_dot_cross.vcxproj">
+      <Project>{79C1A888-2BA5-3DA7-B31A-BDD653A12BAC}</Project>
+      <Name>tut_arithmetic_dot_cross</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\eigen-eigen-2e4aedfc8e06\build\doc\examples\tut_arithmetic_matrix_mul.vcxproj">
+      <Project>{857F1DB4-4F07-30F5-A4C3-E053A86E6A35}</Project>
+      <Name>tut_arithmetic_matrix_mul</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\eigen-eigen-2e4aedfc8e06\build\doc\examples\tut_arithmetic_redux_basic.vcxproj">
+      <Project>{1AB06CCF-760F-37B0-B5A5-324904CE377D}</Project>
+      <Name>tut_arithmetic_redux_basic</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\eigen-eigen-2e4aedfc8e06\build\doc\examples\tut_arithmetic_scalar_mul_div.vcxproj">
+      <Project>{0992609F-0630-3969-9679-F7416AB87C28}</Project>
+      <Name>tut_arithmetic_scalar_mul_div</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\eigen-eigen-2e4aedfc8e06\build\doc\examples\tut_matrix_coefficient_accessors.vcxproj">
+      <Project>{D49EC1A0-9741-3E26-9CF8-95A5AFAA3F63}</Project>
+      <Name>tut_matrix_coefficient_accessors</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\eigen-eigen-2e4aedfc8e06\build\doc\examples\tut_matrix_resize.vcxproj">
+      <Project>{21D7440E-0E54-380C-AD15-EB5A8D4F4617}</Project>
+      <Name>tut_matrix_resize</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\eigen-eigen-2e4aedfc8e06\build\doc\examples\tut_matrix_resize_fixed_size.vcxproj">
+      <Project>{697155F0-4FCE-3FF6-B72C-0ADA22C80370}</Project>
+      <Name>tut_matrix_resize_fixed_size</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
